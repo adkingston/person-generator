@@ -9,7 +9,35 @@ import org.junit.Test;
 public class UniformTimingGeneratorTest {
 
 	@Test
-	public void test() {
+	public void testInitializeUniformTimingGenerator() {	
+		UniformTimingGenerator utg = new UniformTimingGenerator();
+
+		LocalDateTime min = LocalDateTime.now();
+		LocalDateTime max = min.plusSeconds(10);
+		long generateCount = 10;
+		
+		/**
+		 * Do a correct initialization
+		 */
+		try {
+			utg.initialize(min, max, generateCount);
+		} catch (Exception ex) {
+			fail(ex.getMessage());
+		}
+		
+		/**
+		 * Do a bad count initialization
+		 */
+		try {
+			utg.initialize(min, max, -1);
+			fail("Expected to throw an exception when given a negative count");
+		} catch (Exception ex) {
+		}
+		
+	}
+	
+	@Test
+	public void testUniformTimingGenerator() {
 		UniformTimingGenerator utg = new UniformTimingGenerator();
 		
 		LocalDateTime min = LocalDateTime.now();

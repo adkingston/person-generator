@@ -25,6 +25,9 @@ public class UniformTimingGeneratorTest {
 		_numberToGenerate = 10;
 	}
 	
+	/**
+	 * Test a "good" initialization.
+	 */
 	@Test
 	public void testGoodInitialize() {	
 		/**
@@ -37,11 +40,11 @@ public class UniformTimingGeneratorTest {
 		}
 	}
 		
+	/**
+	 * Test an initialization with a bad count.
+	 */
 	@Test
 	public void testBadCountInitialize() {	
-		/**
-		 * Do a bad count initialization
-		 */
 		try {
 			_utg.initialize(_min, _max, -1);
 			fail("Expected to throw an exception when given a negative count");
@@ -49,11 +52,11 @@ public class UniformTimingGeneratorTest {
 		}
 	}
 	
+	/**
+	 * Test an initialization with null min and max values.
+	 */
 	@Test
 	public void testNullMinMaxInitialize() {	
-		/**
-		 * Do a bad count initialization
-		 */
 		try {
 			_utg.initialize(null, _max, _numberToGenerate);
 			fail("Expected to throw an exception when given a null minimum");
@@ -67,22 +70,21 @@ public class UniformTimingGeneratorTest {
 		}
 	}
 
+	/**
+	 * Test that a good setup results in 10 good timestamps, but the 11th one return null as expected.
+	 */
 	@Test
 	public void testUniformTimingGenerator() {
 		
-		LocalDateTime min = LocalDateTime.now();
-		LocalDateTime max = min.plusSeconds(10);
-		long generateCount = 10;
+		_utg.initialize(_min, _max, _numberToGenerate);
 		
-		_utg.initialize(min, max, generateCount);
-		
-		LocalDateTime expected = min;
+		LocalDateTime expected = _min;
 		LocalDateTime timeStamp = null;
 		
 		/**
 		 * This should give 10 good results separated by 1 second
 		 */
-		for (int i = 0; i < generateCount; i ++) {
+		for (int i = 0; i < _numberToGenerate; i ++) {
 			timeStamp = _utg.getNextTime();
 			
 //			System.out.println("Call " + (i+1) + ": " + timeStamp);

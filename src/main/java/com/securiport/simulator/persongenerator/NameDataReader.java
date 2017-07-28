@@ -8,11 +8,8 @@ import java.io.FileReader;
 
 public class NameDataReader extends BaseNameGenerator implements NameGenerator {
 	
-	
-	RandomSeed R = new RandomSeed();
-	
 	@Override
-	public String getName() {
+	public String getName(RandomSeed R) {
 		 
 		
 		BufferedReader br = null;
@@ -21,7 +18,7 @@ public class NameDataReader extends BaseNameGenerator implements NameGenerator {
 		for ( int i=0; i < fileNames.length; i++ ) {
 			try {
 				br = new BufferedReader(new FileReader(fileNames[i]));
-				int randRow = R.nextNum();
+				int randRow = R.getNum(13514);
 				int counter = 0;
 				String line;
 				String name = null;

@@ -2,6 +2,8 @@ package com.securiport.simulator.persongenerator;
 
 import java.time.LocalDateTime;
 
+import com.securiport.simulator.persongenerator.FunctionalTimeGenerator.functionalType;
+
 public interface TimingGenerator {
 	
 	/**
@@ -10,5 +12,4 @@ public interface TimingGenerator {
 	LocalDateTime getNextTime();
 	
 	void initialize(LocalDateTime minimumTime, LocalDateTime maximumTime, long numberToGenerate);
-	
 }

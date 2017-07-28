@@ -49,41 +49,41 @@ public class NameGeneratorTest {
 		}
 	}
 	
-//	@Test
-//	public void testNameGenerator() {
-//		String firstNamePath = "/Users/Alexander/csv/first_names.csv";
-//		String lastNamePath = "/Users/Alexander/csv/last_names.csv";
-//
-//		
-//		_ndr1.initialize(firstNamePath, lastNamePath);
-//		
-//		String name1 = null;
-//
-//		for ( int i = 0; i < 10000; i++ ) {
-//			
-//			name1 = _ndr1.getName();
-//			System.out.println(name1);
-//
-//		}
-//	}
-	
 	@Test
-	public void testForeignNameGenerator() {
-		// Same test but with names containing non-Latin characters
-		String firstNamePath = "/Users/Alexander/csv/random_names.csv";
+	public void testNameGenerator() {
+		String firstNamePath = "/Users/Alexander/csv/first_names.csv";
 		String lastNamePath = "/Users/Alexander/csv/last_names.csv";
+
 		
 		_ndr1.initialize(firstNamePath, lastNamePath);
 		
-		String name = null;
-		int count = 0;
-		for ( int i = 0; i < 1000; i++ ) {
-			name = _ndr1.getName();
+		String name1 = null;
+
+		for ( int i = 0; i < 10000; i++ ) {
 			
-			System.out.println(name);
-			count++;
-			//Should print out 1000 names to the console. 			
+			name1 = _ndr1.getName();
+			System.out.println(name1);
+
 		}
-		assertTrue( count == 1000 );
 	}
+	
+//	@Test
+//	public void testForeignNameGenerator() {
+//		// Same test but with names containing non-Latin characters
+//		String firstNamePath = "/Users/Alexander/csv/random_names.csv";
+//		String lastNamePath = "/Users/Alexander/csv/last_names.csv";
+//		
+//		_ndr1.initialize(firstNamePath, lastNamePath);
+//		
+//		String name = null;
+//		int count = 0;
+//		for ( int i = 0; i < 1000; i++ ) {
+//			name = _ndr1.getName();
+//			
+//			System.out.println(name);
+//			count++;
+//			//Should print out 1000 names to the console. 			
+//		}
+//		assertTrue( count == 1000 );
+//	}
 }

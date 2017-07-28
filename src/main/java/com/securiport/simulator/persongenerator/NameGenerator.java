@@ -6,7 +6,7 @@ public interface NameGenerator {
 	 * Produces random name based on strategy
 	 */
 	
-	String getName();
+	String getName(RandomSeed R);
 	
 	void initialize(String firstNameFile, String lastNameFile);
 }

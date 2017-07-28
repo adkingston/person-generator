@@ -5,7 +5,7 @@ public abstract class BaseNameGenerator implements NameGenerator {
 	protected String firstNameFile;
 	protected String lastNameFile;
 	
-	public abstract String getName();
+	public abstract String getName(RandomSeed R);
 		
 	/**
 	 * firstName and lastName must be paths to .csv files

@@ -16,6 +16,7 @@ public class FunctionalTimeGenerator extends BaseTimingGenerator implements Timi
 	private static long timeRange;
 	private functionalType _type;
 
+
 	public enum functionalType {
 		LOGISTIC, EXPONENTIAL, LOGARITHMIC;
 		
@@ -23,11 +24,11 @@ public class FunctionalTimeGenerator extends BaseTimingGenerator implements Timi
 		long calculate(double x) {
 			switch (this) {
 				case LOGISTIC :
-					return  (long) ((long) (2.0768*timeRange)/(1 + Math.exp(-2*x)));
+					return  (long) ((long) timeRange*(Math.cos(Math.PI + Math.PI*x))*0.5 + 0.5);
 				case EXPONENTIAL :
-					return (long) ((long) (timeRange/2.35)*Math.exp(x-1.0));
+					return (long) ((long) timeRange*(x*x));
 				case LOGARITHMIC :
-					return (long) ((long) (timeRange/2.29)*Math.log(x+0.225));
+					return (long) ((long) timeRange*(-x*x + 2*x));
 				default :
 					throw new AssertionError("Unknown function " + this);
 			}
@@ -46,10 +47,11 @@ public class FunctionalTimeGenerator extends BaseTimingGenerator implements Timi
 	
 	public Duration getIncrement(Duration[] T) {
 		LocalDateTime[] Times = new LocalDateTime[2];
+		long a = this.minimumTime.atZone(ZoneId.systemDefault()).toEpochSecond();
 		for ( int i=0; i<T.length; i++ ) {
-			long x = T[i].toMillis();
-			double y = (2.0*x)/timeRange;
-			long l = _type.calculate(y) + this.minimumTime.atZone(ZoneId.systemDefault()).toEpochSecond();
+			double x = (double) T[i].toMillis();
+			double y = x/timeRange;
+			long l = _type.calculate(y) + a;
 			Times[i] = convertLocalDateTime(l);
 		}
 		return Duration.ofMillis(ChronoUnit.MILLIS.between(Times[0], Times[1]));

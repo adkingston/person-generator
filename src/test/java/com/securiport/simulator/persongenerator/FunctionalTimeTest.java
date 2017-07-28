@@ -15,8 +15,9 @@ public class FunctionalTimeTest {
 	private TimingGeneratorFactory _tFactory;
 	private LocalDateTime _min;
 	private LocalDateTime _max;
+	private long _numberToGenerate;
 	private TimingGenerator _ftg;
-	private long _numberToGenerate;	
+
 	private GeneratorType _typ;
 	
 	
@@ -26,7 +27,7 @@ public class FunctionalTimeTest {
 		_min = LocalDateTime.now();
 		_max = _min.plusHours(3);
 		_numberToGenerate = 20;
-		_typ = GeneratorType.LOGISTIC;
+		_typ = GeneratorType.EXPONENTIAL;
 	}
 	
 	@Test

@@ -38,9 +38,5 @@ public class NameDataReader extends BaseNameGenerator implements NameGenerator {
 		String lastName = personNames[1];
 		return firstName + " " + lastName;
 	}
-
-	public void initialize(String firstNameFile, String lastNameFile, int seed) {
-		// TODO Auto-generated method stub
-		
-	}
+	
 }

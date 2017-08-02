@@ -7,6 +7,7 @@ import java.lang.reflect.Array;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
 import java.util.Map;
 import java.util.UUID;
 
@@ -14,6 +15,13 @@ import com.securiport.simulator.persongenerator.TimingGeneratorFactory.Generator
 
 class MainProgram {
 	private static TimingGenerator timeGenerator;
+	
+	public static int getSeed() {
+		Long M = System.currentTimeMillis();
+		String F = Long.toString(M);
+		int S = Integer.parseInt(F.substring(F.length()-10));
+		return S;
+	}
 
 	public static void main(String[] args) throws FileNotFoundException {
 		if (args.length < 4) {
@@ -50,10 +58,10 @@ class MainProgram {
 			
 			RandomSeed R;
 			if (Seed == 0) {
-				R = new RandomSeed();
-			} else {
-				R = new RandomSeed(Seed);
+				Seed = getSeed();
 			}
+			
+			R = new RandomSeed(Seed);
 			
 
 //			UniformTimingGenerator UTG = new UniformTimingGenerator();
@@ -76,9 +84,8 @@ class MainProgram {
 			}
 			
 			timeGenerator.initialize(Start, End, Entries);
-			
-			String today = LocalDate.now().toString();
-			PrintWriter pw = new PrintWriter(new File("Immigration Test Data " + today + ".csv"));
+
+			PrintWriter pw = new PrintWriter(new File("Immigration Test Data " + Seed + ".csv"));
 			StringBuilder sb = new StringBuilder();
 			
 			sb.append("UUID"); // Write column titles
@@ -108,17 +115,17 @@ class MainProgram {
 			for ( int i=0; i<Entries; i++ ) {
 				
 				Passport passport = new Passport();
-				String[] passportData = passport.getPassportData(R);
+				ArrayList<String> passportData = passport.getPassportData(R);
 				
-				String title = passportData[0];
-				String firstName = passportData[1];
-				String lastName = passportData[2];
-				String gender = passportData[3];
-				String DOB = passportData[4];
-				String CO = passportData[5];
-				String issued = passportData[6];
-				String expired = passportData[7];
-				String passNo = passportData[8];
+				String title = passportData.get(0);
+				String firstName = passportData.get(1);
+				String lastName = passportData.get(2);
+				String gender = passportData.get(3);
+				String DOB = passportData.get(4);
+				String CO = passportData.get(5);
+				String issued = passportData.get(6);
+				String expired = passportData.get(7);
+				String passNo = passportData.get(8);
 				
 				LocalDateTime timeStamp = timeGenerator.getNextTime();
 				
@@ -126,6 +133,8 @@ class MainProgram {
 				String personEntered = timeStamp + " " + title + " " + firstName + " " + lastName + " " + gender + " " + CO + " " + DOB
 						+ " " + issued + " " + expired + " " + passNo;
 				String uuid = UUID.nameUUIDFromBytes(personEntered.getBytes()).toString();
+				
+				System.out.println(uuid + " " + personEntered);
 			
 				
 				sb.append(uuid);

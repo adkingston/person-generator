@@ -6,14 +6,16 @@ import java.time.LocalDate;
 import java.time.Period;
 import java.time.ZoneId;
 import java.time.temporal.ChronoUnit;
+import java.util.ArrayList;
+import java.util.Arrays;
 
 
 public class Passport {
 	
 	private static String ageData = "C:/Users/Alexander/csv/ageData.json";
 	
-	public String[] getIssueDate(int age, RandomSeed R) {
-		String[] issueExpirey = new String[2];
+	public ArrayList<String> getIssueDate(int age, RandomSeed R) {
+		ArrayList<String> issueExpirey = new ArrayList<String>();;
 		LocalDate now = LocalDate.now();
 		LocalDate lastEntryValid = now.minusMonths(6);
 		int validFor;
@@ -26,14 +28,15 @@ public class Passport {
 		int daysBetween = (int) ChronoUnit.DAYS.between(firstEntryValid, lastEntryValid);
 		LocalDate issueDate = firstEntryValid.plusDays(R.getNum(daysBetween));
 		LocalDate expireyDate = issueDate.plusYears(validFor);
-		issueExpirey[0] = issueDate.toString();
-		issueExpirey[1] = expireyDate.toString();
+		
+		issueExpirey.add(issueDate.toString());
+		issueExpirey.add(expireyDate.toString());
 		return issueExpirey;
 	}
 	
 	public String generateNumber(RandomSeed R) {
 		String number = new String();
-		int[] A = {1, 10};
+		ArrayList<Integer> A = new ArrayList<Integer>(Arrays.asList(1, 10));
 		number += Integer.toString(R.randRange(A)); // first number cannot be 0
 		for (int i=0; i<8; i++) {
 			number += Integer.toString(R.getNum(10));
@@ -41,8 +44,8 @@ public class Passport {
 		return number;
 	}
 	
-	public String[] getPassportData(RandomSeed R) throws FileNotFoundException {
-		String[] data = new String[9];
+	public ArrayList<String> getPassportData(RandomSeed R) throws FileNotFoundException {
+		ArrayList<String> data = new ArrayList<String>();
 		
 		// first get country of origin
 		AgeNationalityGenerator aN = new AgeNationalityGenerator();
@@ -55,22 +58,25 @@ public class Passport {
 		int age = aN.nextAge(countryOfOrigin.getAges(), R);
 		String DOB = aN.getDOB(age, R).toString();
 		
-		String[] issueAndExpireyDates = getIssueDate(age, R);
+		ArrayList<String> issueAndExpireyDates = getIssueDate(age, R);
 		
 		NameDataReader N = new NameDataReader();
-		N.initialize("C:/Users/Alexander/csv/names.csv");
+		N.initialize("C:/Users/Alexander/csv/names.json");
 		
-		String[] name = N.getName(R);
+		ArrayList<String> name = N.getName(R);
+
+		data.addAll(name);
+//		for (int i=0; i<4; i++) {
+//			data.add(name.get(i));
+//		}
+		data.add(DOB);
+		data.add(CO);
+		data.addAll(issueAndExpireyDates);
+//		for (int i=0; i<2; i++) {
+//			data[i+6] = issueAndExpireyDates[i];
+//		}
 		
-		for (int i=0; i<4; i++) {
-			data[i] = name[i];
-		}
-		data[4] = DOB;
-		data[5] = CO;
-		for (int i=0; i<2; i++) {
-			data[i+6] = issueAndExpireyDates[i];
-		}
-		data[8] = generateNumber(R);
+		data.add(generateNumber(R));
 		
 		
 		return data;

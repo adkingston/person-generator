@@ -6,6 +6,7 @@ import java.io.FileReader;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.stream.Collectors;
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.time.LocalDate;
 import com.google.gson.Gson;
@@ -47,18 +48,18 @@ public class AgeNationalityGenerator extends Passport{
 		return country;
 	}
 	
-	public int[] getAgeRange(String ages) {
+	public ArrayList<Integer> getAgeRange(String ages) {
 		// Turns string depicting range of ages into a list of two integers 
-		int[] range = new int[2];
+		ArrayList<Integer> range = new ArrayList<Integer>();
 		if (ages.length() == 5) {
-			range[0] = Integer.parseInt(ages.substring(0, 2));
-			range[1]  = Integer.parseInt(ages.substring(ages.length()-2, ages.length()));
+			range.add(Integer.parseInt(ages.substring(0, 2)));
+			range.add(Integer.parseInt(ages.substring(ages.length()-2, ages.length())));
 		} else if (ages.length() == 3 && !ages.substring(2).equals("+")) {
-			range[0] = Integer.parseInt(ages.substring(0, 1));
-			range[1] = Integer.parseInt(ages.substring(2, 3));
+			range.add(Integer.parseInt(ages.substring(0, 1)));
+			range.add(Integer.parseInt(ages.substring(2, 3)));
 		} else {
-			range[0] = Integer.parseInt(ages.substring(0, 1));
-			range[1] = 100;
+			range.add(Integer.parseInt(ages.substring(0, 1)));
+			range.add(100);
 		}
 		return range;
 	}
@@ -83,7 +84,7 @@ public class AgeNationalityGenerator extends Passport{
 			}
 		}
 		// Convert string representation of age range to integers
-		int[] ageInterval = getAgeRange(ageRange);
+		ArrayList<Integer> ageInterval = getAgeRange(ageRange);
 
 		// Get a random integer within the age range
 		int Age = R.randRange(ageInterval);

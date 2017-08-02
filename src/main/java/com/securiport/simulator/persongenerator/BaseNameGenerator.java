@@ -1,22 +1,34 @@
 package com.securiport.simulator.persongenerator;
 
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.util.ArrayList;
+
+import com.google.gson.Gson;
+import com.google.gson.stream.JsonReader;
+
 public abstract class BaseNameGenerator implements NameGenerator {
 	
 
-	protected String NameFile;
+	protected NameData NameFile;
 	
-	public abstract String[] getName(RandomSeed R);
+	public abstract ArrayList<String> getName(RandomSeed R);
 		
-	/**
-	 * firstName and lastName must be paths to .csv files
-	 */
+	public NameData parseJson(String fileName) throws FileNotFoundException {
+		// Method to parse the .json file. 
+		FileReader data = new FileReader(fileName);
+		JsonReader fr = new JsonReader(data);
+		Gson gson = new Gson();
+		NameData nameData = gson.fromJson(fr, NameData.class);
+		return nameData;
+	}
 	
 	public void initialize(String NameFile) {
-		String csv = "csv";
-		if (!NameFile.substring(NameFile.length()-3).equals(csv)) {
-			throw new IllegalArgumentException("Files must be in csv format");
+		try {
+			this.NameFile = parseJson(NameFile);
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
 		}
-		this.NameFile = NameFile;
 
 	}
 }

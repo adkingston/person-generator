@@ -5,6 +5,8 @@ import java.time.Instant;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.time.temporal.ChronoUnit;
+import java.util.ArrayList;
+import java.util.Arrays;
 
 
 public class FunctionalTimeGenerator extends BaseTimingGenerator implements TimingGenerator {
@@ -45,16 +47,16 @@ public class FunctionalTimeGenerator extends BaseTimingGenerator implements Timi
 		return y.atZone(ZoneId.systemDefault()).toLocalDateTime();
 	}
 	
-	public Duration getIncrement(Duration[] T) {
-		LocalDateTime[] Times = new LocalDateTime[2];
+	public Duration getIncrement(ArrayList<Duration> T) {
+		ArrayList<LocalDateTime> Times = new ArrayList<LocalDateTime>();
 		long a = this.minimumTime.atZone(ZoneId.systemDefault()).toEpochSecond();
-		for ( int i=0; i<T.length; i++ ) {
-			double x = (double) T[i].toMillis();
+		for ( int i=0; i<T.size(); i++ ) {
+			double x = (double) T.get(i).toMillis();
 			double y = x/timeRange;
 			long l = _type.calculate(y) + a;
-			Times[i] = convertLocalDateTime(l);
+			Times.add(convertLocalDateTime(l));
 		}
-		return Duration.ofMillis(ChronoUnit.MILLIS.between(Times[0], Times[1]));
+		return Duration.ofMillis(ChronoUnit.MILLIS.between(Times.get(0), Times.get(1)));
 	}
 	
 	public LocalDateTime getNextTime() {
@@ -69,7 +71,7 @@ public class FunctionalTimeGenerator extends BaseTimingGenerator implements Timi
 		} else if ( counter >= this.numberToGenerate ) {
 			return null;
 		}
-		Duration[] Range = {partitionRange.multipliedBy(counter), partitionRange.multipliedBy(counter+1)};
+		ArrayList<Duration> Range = new ArrayList<Duration>(Arrays.asList(partitionRange.multipliedBy(counter), partitionRange.multipliedBy(counter+1)));
 		increment = getIncrement(Range);
 	
 		lastTime = lastTime.plus(increment);

@@ -14,7 +14,7 @@ public class mainTest {
 		// Want to see if we get an error after 10000 runs
 		int counter = 0;
 		MainProgram Main = new MainProgram();
-		while ( counter < 1000 ) {
+		while ( counter < 1 ) {
 			Main.main(args);
 			System.out.println(counter);
 			counter++;

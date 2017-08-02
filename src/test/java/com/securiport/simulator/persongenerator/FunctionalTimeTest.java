@@ -27,7 +27,7 @@ public class FunctionalTimeTest {
 		_min = LocalDateTime.now();
 		_max = _min.plusHours(3);
 		_numberToGenerate = 20;
-		_typ = GeneratorType.LOGARITHMIC;
+		_typ = GeneratorType.LOGISTIC;
 	}
 	
 	@Test

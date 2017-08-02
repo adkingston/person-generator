@@ -11,8 +11,6 @@ import java.time.LocalDate;
 import com.google.gson.Gson;
 import com.google.gson.stream.JsonReader;
 
-
-
 /* @author akingston */
 
 public class AgeNationalityGenerator extends Passport{
@@ -93,7 +91,7 @@ public class AgeNationalityGenerator extends Passport{
 	}
 	
 	public LocalDate getDOB(int age, RandomSeed R) {
-		int month = 0;
+		int month = R.getNum(11);
 		
 		int currYear = 2017;
 		int dummyDay = 1;

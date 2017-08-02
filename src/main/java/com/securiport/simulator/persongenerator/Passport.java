@@ -33,14 +33,16 @@ public class Passport {
 	
 	public String generateNumber(RandomSeed R) {
 		String number = new String();
-		for (int i=0; i<9; i++) {
+		int[] A = {1, 10};
+		number += Integer.toString(R.randRange(A)); // first number cannot be 0
+		for (int i=0; i<8; i++) {
 			number += Integer.toString(R.getNum(10));
 		}
 		return number;
 	}
 	
 	public String[] getPassportData(RandomSeed R) throws FileNotFoundException {
-		String[] data = new String[6];
+		String[] data = new String[9];
 		
 		// first get country of origin
 		AgeNationalityGenerator aN = new AgeNationalityGenerator();
@@ -56,17 +58,20 @@ public class Passport {
 		String[] issueAndExpireyDates = getIssueDate(age, R);
 		
 		NameDataReader N = new NameDataReader();
-		N.initialize("C:/Users/Alexander/csv/first_names.csv", "C:/Users/Alexander/csv/last_names.csv");
+		N.initialize("C:/Users/Alexander/csv/names.csv");
 		
-		String name = N.getName(R);
+		String[] name = N.getName(R);
 		
-		data[0] = name;
-		data[1] = DOB;
-		data[2] = CO;
-		for (int i=0; i<2; i++) {
-			data[i+3] = issueAndExpireyDates[i];
+		for (int i=0; i<4; i++) {
+			data[i] = name[i];
 		}
-		data[5] = generateNumber(R);
+		data[4] = DOB;
+		data[5] = CO;
+		for (int i=0; i<2; i++) {
+			data[i+6] = issueAndExpireyDates[i];
+		}
+		data[8] = generateNumber(R);
+		
 		
 		return data;
 	}

@@ -1,6 +1,8 @@
 package com.securiport.simulator.persongenerator;
 
+import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.PrintWriter;
 import java.lang.reflect.Array;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -74,19 +76,85 @@ class MainProgram {
 			}
 			
 			timeGenerator.initialize(Start, End, Entries);
-
-			System.out.println("UUID, Time of Entry, Full Name, Country of Origin, Date of Birth, Issue Date, Expiration Date, Passport Number");
+			
+			String today = LocalDate.now().toString();
+			PrintWriter pw = new PrintWriter(new File("Immigration Test Data " + today + ".csv"));
+			StringBuilder sb = new StringBuilder();
+			
+			sb.append("UUID"); // Write column titles
+			sb.append(',');
+			sb.append("Time of Entry");
+			sb.append(',');
+			sb.append("Title");
+			sb.append(',');
+			sb.append("Given Name");
+			sb.append(',');
+			sb.append("Surname");
+			sb.append(',');
+			sb.append("Sex");
+			sb.append(',');
+			sb.append("Country of Origin");
+			sb.append(',');
+			sb.append("Date of Birth");
+			sb.append(',');
+			sb.append("Issue Date");
+			sb.append(',');
+			sb.append("Expiration Date");
+			sb.append(',');
+			sb.append("Passport Number");
+			sb.append('\n');
+			
 			
 			for ( int i=0; i<Entries; i++ ) {
 				
 				Passport passport = new Passport();
 				String[] passportData = passport.getPassportData(R);
 				
-				String personEntered = timeGenerator.getNextTime() + " " + passportData[0] + " " + passportData[2] + " " + passportData[1]
-						+ " " + passportData[3] + " " + passportData[4] + " " + passportData[5];
+				String title = passportData[0];
+				String firstName = passportData[1];
+				String lastName = passportData[2];
+				String gender = passportData[3];
+				String DOB = passportData[4];
+				String CO = passportData[5];
+				String issued = passportData[6];
+				String expired = passportData[7];
+				String passNo = passportData[8];
+				
+				LocalDateTime timeStamp = timeGenerator.getNextTime();
+				
+				// Given passport data as string will provide a unique UUID 
+				String personEntered = timeStamp + " " + title + " " + firstName + " " + lastName + " " + gender + " " + CO + " " + DOB
+						+ " " + issued + " " + expired + " " + passNo;
 				String uuid = UUID.nameUUIDFromBytes(personEntered.getBytes()).toString();
-				System.out.println(uuid + " " + personEntered);
+			
+				
+				sb.append(uuid);
+				sb.append(',');
+				sb.append(timeStamp);
+				sb.append(',');
+				sb.append(title);
+				sb.append(',');
+				sb.append(firstName);
+				sb.append(',');
+				sb.append(lastName);
+				sb.append(',');
+				sb.append(gender);
+				sb.append(',');
+				sb.append(CO);
+				sb.append(',');
+				sb.append(DOB);
+				sb.append(',');
+				sb.append(issued);
+				sb.append(',');
+				sb.append(expired);
+				sb.append(',');
+				sb.append(passNo);
+				sb.append('\n');
 			}
+			pw.write(sb.toString());
+			pw.close();
+
+			System.out.println("Done");
 		}	
 	}
 }

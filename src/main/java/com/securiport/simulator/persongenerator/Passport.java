@@ -1,13 +1,10 @@
 package com.securiport.simulator.persongenerator;
 
 import java.io.FileNotFoundException;
-import java.time.Instant;
 import java.time.LocalDate;
-import java.time.Period;
-import java.time.ZoneId;
 import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
-import java.util.Arrays;
+
 
 
 public class Passport {
@@ -56,9 +53,7 @@ public class Passport {
 		}
 		return number;
 	}
-	
-
-	
+		
 	public ArrayList<String> getPassportData(RandomSeed R) throws FileNotFoundException {
 		// Initialize necessary methods (or whatever the appropriate term for these things are... [types]?)
 		ArrayList<String> data = new ArrayList<String>();
@@ -69,7 +64,6 @@ public class Passport {
 		Countries Nationality = N.getCountry(R);
 		Countries countryOfBirth = null;
 
-		
 		if (isExpat(R)) {
 			countryOfBirth = N.getCountry(R);
 		} else { 
@@ -97,7 +91,6 @@ public class Passport {
 		
 		NameDataReader nameData = new NameDataReader();
 		nameData.initialize("C:/Users/Alexander/csv/names.json");
-		
 		ArrayList<String> name = nameData.getName(R);
 
 		data.addAll(name);
@@ -108,10 +101,6 @@ public class Passport {
 		data.addAll(issueAndExpireyDates);
 		data.add(generateNumber(R));
 	
-		
-		return data;
-		
-		
+		return data;	
 	}
-	
 }

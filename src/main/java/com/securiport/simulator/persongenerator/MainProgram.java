@@ -63,7 +63,6 @@ class MainProgram {
 //		 want to see how long this takes to run:
 		 long startTime = System.nanoTime();
 		
-		
 		if (args.length < 4) { // check if there are enough arguments 
 			System.out.println("Please provide start time, end time, number of entries, "
 					+ "time generation type, and an optional seed");
@@ -156,7 +155,6 @@ class MainProgram {
 			sb.append("Passport No.");
 			sb.append('\n');
 			
-			
 			/**
 			 * Start with max of 2 flights landed at the same time. Will look into how to generalize. 
 			 * Ultimately, want to have flights arriving on a schedule, so there could be multiple flights 
@@ -174,7 +172,7 @@ class MainProgram {
 			int connectionSize = R.randRange(passengerRange);
 			
 			int count1 = 0; // Use count to ensure that only the number of passengers on a flight go through immigration with that flight no. 
-			int count2 = 0;
+			int count2 = 0; 
 			
 			NationGenerator Nations = new NationGenerator(); // Get airport country name (currently, this is chosen at random). 
 			String thisCountry = Nations.getCountry(R).getCountryName();

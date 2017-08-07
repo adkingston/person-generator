@@ -15,7 +15,6 @@ public class RandomSeed {
 		RAND_NUM = new Random(seed);
 	}
 	
-	
 	public int getNum(int maxRows) {
 		return RAND_NUM.nextInt(maxRows);	
 	}
@@ -25,12 +24,8 @@ public class RandomSeed {
 	}
 	
 	public int randRange(ArrayList<Integer> A) {
-		// Don't want newborns flying! 
 		int a = A.get(0);
 		int b = A.get(1);
-		if (a == 0) {
-			a = 1;
-		}
 		int R = b - a;
 		return RAND_NUM.nextInt(R) + a;
 	}

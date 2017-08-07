@@ -1,7 +1,5 @@
 package com.securiport.simulator.persongenerator;
 
-//import java.io.BufferedReader;
-//import java.io.IOException;
 import java.util.ArrayList;
 //import java.util.Arrays;
 
@@ -17,9 +15,12 @@ public class NameDataReader extends BaseNameGenerator implements NameGenerator {
 
 	@Override
 	public ArrayList<String> getName(RandomSeed R) {
-		 
+		// parses .json file and generates a name with title and gender at random
 		ArrayList<String> nameData = new ArrayList<String>();
 		
+		/*
+		 * json structure: { LirstNames : [--list of names--], FirstNames : [ ..., { gender : '', first : '', title : '' }, ... ] }
+		 */
 		ArrayList<FirstNames> fN = this.NameFile.getFirstNameData();
 		ArrayList<String> lN = this.NameFile.getLastNames();
 		

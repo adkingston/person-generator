@@ -90,7 +90,7 @@ public class Passport {
 		ArrayList<String> issueAndExpireyDates = getIssueDate(DOB, R);
 		
 		NameDataReader nameData = new NameDataReader();
-		nameData.initialize("names.json");
+		nameData.initialize("dataFiles/names.json");
 		ArrayList<String> name = nameData.getName(R);
 
 		data.addAll(name);

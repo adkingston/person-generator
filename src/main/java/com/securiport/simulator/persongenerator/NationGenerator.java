@@ -10,7 +10,7 @@ import com.google.gson.stream.JsonReader;
 
 public class NationGenerator {
 	
-	private static String AGE_DATA = "citiesandAgeData.json";
+	private static String AGE_DATA = "dataFiles/citiesandAgeData.json";
 	
 	public World parseJson(String fileName) throws FileNotFoundException {
 		// Method to parse the .json file. 

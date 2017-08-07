@@ -15,7 +15,7 @@ import com.google.gson.stream.JsonReader;
 
 public class Flight {
 	
-	private String AIRLINE_CODES = "C:/Users/Alexander/csv/airlineCodes.json";
+	private String AIRLINE_CODES = "dataFiles/airlineCodes.json";
 	
 	public Airlines getAirline(RandomSeed R) throws FileNotFoundException {
 		// parses AIRLINE_CODES and returns random Airline {Country, code} object from json

@@ -1,0 +1,176 @@
+[{
+	'Country': 'Argentina',
+	'Code': 'AR'
+},
+{
+	'Country': 'Aruba',
+	'Code': 'FQ'
+},
+{
+	'Country': 'Australia',
+	'Code': 'QF'
+},
+{
+	'Country': 'Austria',
+	'Code': 'OS'
+},
+{
+	'Country': 'Belgium',
+	'Code': 'SN'
+},
+{
+	'Country': 'Brazil',
+	'Code': 'RG'
+},
+{
+	'Country': 'Canada',
+	'Code': 'AC'
+},
+{
+	'Country': 'Chile',
+	'Code': 'UC'
+},
+{
+	'Country': 'Chile',
+	'Code': 'LA'
+},
+{
+	'Country': 'China',
+	'Code': 'CI'
+},
+{
+	'Country': 'Columbia',
+	'Code': 'AV'
+},
+{
+	'Country': 'CostaRica',
+	'Code': 'LR'
+},
+{
+	'Country': 'DominicanRep.',
+	'Code': 'DO'
+},
+{
+	'Country': 'Ecuador',
+	'Code': 'EU'
+},
+{
+	'Country': 'England',
+	'Code': 'BA'
+},
+{
+	'Country': 'Finland',
+	'Code': 'AY'
+},
+{
+	'Country': 'France',
+	'Code': 'AF'
+},
+{
+	'Country': 'Guadeloupe',
+	'Code': 'OG'
+},
+{
+	'Country': 'Germany',
+	'Code': 'LH'
+},
+{
+	'Country': 'Greece',
+	'Code': 'OA'
+},
+{
+	'Country': 'Guatamala',
+	'Code': 'GU'
+},
+{
+	'Country': 'Holland',
+	'Code': 'MP'
+},
+{
+	'Country': 'India',
+	'Code': 'AI'
+},
+{
+	'Country': 'Indonesia',
+	'Code': 'GA'
+},
+{
+	'Country': 'Ireland',
+	'Code': 'EI'
+},
+{
+	'Country': 'Israel',
+	'Code': 'LY'
+},
+{
+	'Country': 'Italy',
+	'Code': 'AZ'
+},
+{
+	'Country': 'Jamaica',
+	'Code': 'JM'
+},
+{
+	'Country': 'Japan',
+	'Code': 'NH'
+},
+{
+	'Country': 'Japan',
+	'Code': 'JL'
+},
+{
+	'Country': 'Jordan',
+	'Code': 'RJ'
+},
+{
+	'Country': 'Korea',
+	'Code': 'KE'
+},
+{
+	'Country': 'Mexico',
+	'Code': 'AM'
+},
+{
+	'Country': 'Mexico',
+	'Code': 'MX'
+},
+{
+	'Country': 'NewZealand',
+	'Code': 'NZ'
+},
+{
+	'Country': 'Peru',
+	'Code': 'PL'
+},
+{
+	'Country': 'PhilippineIs.',
+	'Code': 'PR'
+},
+{
+	'Country': 'Poland',
+	'Code': 'LO'
+},
+{
+	'Country': 'Russia',
+	'Code': 'SU'
+},
+{
+	'Country': 'Singapore',
+	'Code': 'SQ'
+},
+{
+	'Country': 'Spain',
+	'Code': 'IB'
+},
+{
+	'Country': 'Switzerland',
+	'Code': 'SR'
+},
+{
+	'Country': 'Thailand',
+	'Code': 'TG'
+},
+{
+	'Country': nan,
+	'Code': nan
+}]

@@ -11,26 +11,25 @@ import java.util.Arrays;
 
 public class FunctionalTimeGenerator extends BaseTimingGenerator implements TimingGenerator {
 
-	private LocalDateTime lastTime;
-	private Duration increment;
-	private Duration partitionRange;
-	private long counter = 0;
-	private static long timeRange;
+	private LocalDateTime LAST_TIME;
+	private Duration INCREMENT;
+	private Duration PARTITION_RANGE;
+	private long COUNTER = 0;
+	private static long TIME_RANGE;
 	private functionalType _type;
 
 
 	public enum functionalType {
 		LOGISTIC, EXPONENTIAL, LOGARITHMIC;
 		
-		
 		long calculate(double x) {
 			switch (this) {
 				case LOGISTIC :
-					return  (long) ((long) timeRange*(Math.cos(Math.PI + Math.PI*x))*0.5 + 0.5);
+					return  (long) ((long) TIME_RANGE*(Math.cos(Math.PI + Math.PI*x))*0.5 + 0.5);
 				case EXPONENTIAL :
-					return (long) ((long) timeRange*(x*x));
+					return (long) ((long) TIME_RANGE*(x*x));
 				case LOGARITHMIC :
-					return (long) ((long) timeRange*(-x*x + 2*x));
+					return (long) ((long) TIME_RANGE*(-x*x + 2*x));
 				default :
 					throw new AssertionError("Unknown function " + this);
 			}
@@ -47,12 +46,12 @@ public class FunctionalTimeGenerator extends BaseTimingGenerator implements Timi
 		return y.atZone(ZoneId.systemDefault()).toLocalDateTime();
 	}
 	
-	public Duration getIncrement(ArrayList<Duration> T) {
+	public Duration getINCREMENT(ArrayList<Duration> T) {
 		ArrayList<LocalDateTime> Times = new ArrayList<LocalDateTime>();
 		long a = this.minimumTime.atZone(ZoneId.systemDefault()).toEpochSecond();
 		for ( int i=0; i<T.size(); i++ ) {
 			double x = (double) T.get(i).toMillis();
-			double y = x/timeRange;
+			double y = x/TIME_RANGE;
 			long l = _type.calculate(y) + a;
 			Times.add(convertLocalDateTime(l));
 		}
@@ -60,22 +59,22 @@ public class FunctionalTimeGenerator extends BaseTimingGenerator implements Timi
 	}
 	
 	public LocalDateTime getNextTime() {
-		if (lastTime == null) {
-			lastTime = this.minimumTime;
-			timeRange = ChronoUnit.MILLIS.between(this.minimumTime, this.maximumTime);
-			partitionRange = Duration.ofMillis(timeRange / this.numberToGenerate);
-			counter++;
-			return lastTime;
-		} else if ( lastTime.isAfter(this.maximumTime) ) {
+		if (LAST_TIME == null) {
+			LAST_TIME = this.minimumTime;
+			TIME_RANGE = ChronoUnit.MILLIS.between(this.minimumTime, this.maximumTime);
+			PARTITION_RANGE = Duration.ofMillis(TIME_RANGE / this.numberToGenerate);
+			COUNTER++;
+			return LAST_TIME;
+		} else if ( LAST_TIME.isAfter(this.maximumTime) ) {
 			return null;
-		} else if ( counter >= this.numberToGenerate ) {
+		} else if ( COUNTER >= this.numberToGenerate ) {
 			return null;
 		}
-		ArrayList<Duration> Range = new ArrayList<Duration>(Arrays.asList(partitionRange.multipliedBy(counter), partitionRange.multipliedBy(counter+1)));
-		increment = getIncrement(Range);
+		ArrayList<Duration> Range = new ArrayList<Duration>(Arrays.asList(PARTITION_RANGE.multipliedBy(COUNTER), PARTITION_RANGE.multipliedBy(COUNTER+1)));
+		INCREMENT = getINCREMENT(Range);
 	
-		lastTime = lastTime.plus(increment);
-		counter++;
-		return lastTime;
+		LAST_TIME = LAST_TIME.plus(INCREMENT);
+		COUNTER++;
+		return LAST_TIME;
 	}
 }

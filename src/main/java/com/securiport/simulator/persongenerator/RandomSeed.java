@@ -8,21 +8,20 @@ import java.util.concurrent.ThreadLocalRandom;
 
 public class RandomSeed {
 	
-	private Random _randNum;
-
-
+	private Random RAND_NUM;
+	
 	public RandomSeed(int seed) {
 		System.out.println("Seed is: " + seed);
-		_randNum = new Random(seed);
+		RAND_NUM = new Random(seed);
 	}
 	
 	
 	public int getNum(int maxRows) {
-		return _randNum.nextInt(maxRows);	
+		return RAND_NUM.nextInt(maxRows);	
 	}
 	
 	public double nextDouble() {
-		return _randNum.nextDouble();
+		return RAND_NUM.nextDouble();
 	}
 	
 	public int randRange(ArrayList<Integer> A) {
@@ -33,10 +32,10 @@ public class RandomSeed {
 			a = 1;
 		}
 		int R = b - a;
-		return _randNum.nextInt(R) + a;
+		return RAND_NUM.nextInt(R) + a;
 	}
 	
 	public long randRangeL(long a, long b) {
-		return a + (long) _randNum.nextDouble()*(b-a);
+		return a + (long) RAND_NUM.nextDouble()*(b-a);
 	}
 }

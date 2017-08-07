@@ -1,4 +1,4 @@
-package com.securiport.simulator.persongenerator;
+package com.securiport.simulator.persongenerator.timegenerator;
 
 import java.time.Duration;
 import java.time.Instant;

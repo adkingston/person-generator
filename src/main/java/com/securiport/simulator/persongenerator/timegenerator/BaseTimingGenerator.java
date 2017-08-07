@@ -1,8 +1,8 @@
-package com.securiport.simulator.persongenerator;
+package com.securiport.simulator.persongenerator.timegenerator;
 
 import java.time.LocalDateTime;
 
-import com.securiport.simulator.persongenerator.FunctionalTimeGenerator.functionalType;
+import com.securiport.simulator.persongenerator.timegenerator.FunctionalTimeGenerator.functionalType;
 
 public abstract class BaseTimingGenerator implements TimingGenerator {
 	

@@ -7,8 +7,10 @@ import java.time.LocalDateTime;
 import org.junit.Before;
 import org.junit.Test;
 
-import com.securiport.simulator.persongenerator.FunctionalTimeGenerator.functionalType;
-import com.securiport.simulator.persongenerator.TimingGeneratorFactory.GeneratorType;
+import com.securiport.simulator.persongenerator.timegenerator.TimingGenerator;
+import com.securiport.simulator.persongenerator.timegenerator.TimingGeneratorFactory;
+import com.securiport.simulator.persongenerator.timegenerator.FunctionalTimeGenerator.functionalType;
+import com.securiport.simulator.persongenerator.timegenerator.TimingGeneratorFactory.GeneratorType;
 
 public class FunctionalTimeTest {
 	

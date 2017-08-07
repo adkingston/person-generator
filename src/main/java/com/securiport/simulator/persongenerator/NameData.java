@@ -3,6 +3,7 @@ package com.securiport.simulator.persongenerator;
 import java.util.ArrayList;
 
 import com.google.gson.annotations.Expose;
+import com.securiport.simulator.persongenerator.model.FirstNames;
 
 
 public class NameData {

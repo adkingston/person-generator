@@ -1,4 +1,4 @@
-package com.securiport.simulator.persongenerator;
+package com.securiport.simulator.persongenerator.model;
 
 import java.util.ArrayList;
 import java.util.HashMap;

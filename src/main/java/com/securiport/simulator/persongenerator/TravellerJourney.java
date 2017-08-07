@@ -10,6 +10,9 @@ import java.util.Set;
 
 public class TravellerJourney {
 	
+	private static final int MAXIMUM_CONNECTIONS = 10;
+	private static final int MINIMUM_CONNECTIONS = 7;
+
 	public boolean isConnecting(RandomSeed R) {
 		double r = R.nextDouble();
 		return r <= 0.45;
@@ -25,7 +28,7 @@ public class TravellerJourney {
 		 * Generates uniformly random list of 7-10 countries taken from citiesandAgeDatat.json. 
 		 * Will need to move getCountry method to more logical location. 
 		 */
-		ArrayList<Integer> range = new ArrayList<Integer>(Arrays.asList(7, 10));
+		ArrayList<Integer> range = new ArrayList<Integer>(Arrays.asList(MINIMUM_CONNECTIONS, MAXIMUM_CONNECTIONS));
 		Map<String, Integer> connectingFlights = new HashMap<String, Integer>();
 		NationGenerator nations = new NationGenerator();
 		int r = R.randRange(range);

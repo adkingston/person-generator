@@ -1,4 +1,4 @@
-package com.securiport.simulator.persongenerator;
+package com.securiport.simulator.persongenerator.model;
 
 public class Airlines {
 	public String Country;

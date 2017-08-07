@@ -10,7 +10,9 @@ import java.util.Arrays;
 import java.util.Map;
 import java.util.UUID;
 
-import com.securiport.simulator.persongenerator.TimingGeneratorFactory.GeneratorType;
+import com.securiport.simulator.persongenerator.timegenerator.TimingGenerator;
+import com.securiport.simulator.persongenerator.timegenerator.TimingGeneratorFactory;
+import com.securiport.simulator.persongenerator.timegenerator.TimingGeneratorFactory.GeneratorType;
 
 /**
  * 

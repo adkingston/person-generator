@@ -7,6 +7,8 @@ import java.time.LocalDateTime;
 import org.junit.Before;
 import org.junit.Test;
 
+import com.securiport.simulator.persongenerator.timegenerator.UniformTimingGenerator;
+
 public class UniformTimingGeneratorTest {
 	
 	private UniformTimingGenerator _utg;

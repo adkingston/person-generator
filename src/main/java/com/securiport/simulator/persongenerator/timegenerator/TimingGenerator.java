@@ -2,8 +2,6 @@ package com.securiport.simulator.persongenerator.timegenerator;
 
 import java.time.LocalDateTime;
 
-import com.securiport.simulator.persongenerator.timegenerator.FunctionalTimeGenerator.functionalType;
-
 public interface TimingGenerator {
 	
 	/**

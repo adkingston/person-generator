@@ -1,17 +1,14 @@
 package com.securiport.simulator.persongenerator;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 import java.util.Random;
-import java.util.concurrent.ThreadLocalRandom;
 
 public class RandomSeed {
 	
 	private Random RAND_NUM;
 	
 	public RandomSeed(int seed) {
-		System.out.println("Seed is: " + seed);
+//		System.out.println("Seed is: " + seed);
 		RAND_NUM = new Random(seed);
 	}
 	

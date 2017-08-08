@@ -1,18 +1,13 @@
 package com.securiport.simulator.persongenerator;
 
-import static org.junit.Assert.*;
-
 import java.time.LocalDateTime;
-
 import org.junit.Before;
 import org.junit.Test;
-
 import com.securiport.simulator.persongenerator.timegenerator.TimingGenerator;
 import com.securiport.simulator.persongenerator.timegenerator.TimingGeneratorFactory;
-import com.securiport.simulator.persongenerator.timegenerator.FunctionalTimeGenerator.functionalType;
 import com.securiport.simulator.persongenerator.timegenerator.TimingGeneratorFactory.GeneratorType;
 
-public class FunctionalTimeTest {
+public class FunctionalTimingGeneratorTest {
 	
 	private TimingGeneratorFactory _tFactory;
 	private LocalDateTime _min;
@@ -34,27 +29,10 @@ public class FunctionalTimeTest {
 	
 	@Test
 	public void testLogisticTimingGenerator() {
-		
-		LocalDateTime min = LocalDateTime.now();
-		LocalDateTime max = min.plusHours(21);
-		long generateCount = 20000;
-		
-		
 		_ftg = _tFactory.getGenerator(_typ);
-		_ftg.initialize(min, max, generateCount);
-	
-		for ( int i=0; i<generateCount; i++ ) {
+		_ftg.initialize(_min, _max, _numberToGenerate);
+		for ( int i=0; i<_numberToGenerate; i++ ) {
 			System.out.println(_ftg.getNextTime());
-			//_ftg.getNextTime(functionalType.EXPONENTIAL);
 		}
 	}
-//	@Test 
-//	public void calculatorTest() {
-//		for ( int i=1; i<=10; i++ ) {
-//			double x = i*8000000.0;
-//			double y = (1.5*x)/(9*8000000);
-//			System.out.println(y);
-//			System.out.println((1.1*(9*8000000))/(1 + Math.exp(-4*y)) + 8000000);
-//		}
-//	}
 }

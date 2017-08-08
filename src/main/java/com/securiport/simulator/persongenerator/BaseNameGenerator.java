@@ -6,13 +6,14 @@ import java.util.ArrayList;
 
 import com.google.gson.Gson;
 import com.google.gson.stream.JsonReader;
+import com.securiport.simulator.persongenerator.model.NameData;
 
 public abstract class BaseNameGenerator implements NameGenerator {
 	
 
 	protected NameData NameFile;
 	
-	public abstract ArrayList<String> getName(RandomSeed R);
+	public abstract ArrayList<String> getName(RandomSeed seed);
 		
 	public NameData parseJson(String fileName) throws FileNotFoundException {
 		// Method to parse the .json file. 

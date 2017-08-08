@@ -8,7 +8,7 @@ public interface NameGenerator {
 	 * Produces random name based on strategy
 	 */
 	
-	ArrayList<String> getName(RandomSeed R);
+	ArrayList<String> getName(RandomSeed seed);
 	
 	void initialize(String NameFile);
 }

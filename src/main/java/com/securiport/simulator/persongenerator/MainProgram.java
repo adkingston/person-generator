@@ -39,8 +39,8 @@ class MainProgram {
 		 * 
 		 * 		UUID
 		 * 
-		 * 		Flight number					Relevant files: Airlines.java, Flight.java
-		 * 		Flight origin country					
+		 * 		FlightGenerator number					Relevant files: Airlines.java, FlightGenerator.java
+		 * 		FlightGenerator origin country					
 		 * 	
 		 * 		Time of entry					R.F.: TimingGeneratorFactory.java, TimingGenerator.java, BaseTimingGenerator.java,							
 		 * 											  FuntionalTiming Generator.java, UniformTimingGenerator.java
@@ -73,7 +73,7 @@ class MainProgram {
 			DateTimeFormatter format = DateTimeFormatter.ofPattern("MM-dd-yyy HH:mm:ss"); 
 			LocalDateTime Start = null;
 			LocalDateTime End = null;
-			int Seed = 0;
+			int seedValue = 0;
 			long Entries = 0;
 			
 			try { // convert dates to Local Date Time format. 
@@ -90,16 +90,14 @@ class MainProgram {
 			}
 			
 			// Initiate random number generator with appropriate seed 
-			RandomSeed R = null;
 			try { 
-				Seed = Integer.parseInt(args[4]);
-				R = new RandomSeed(Seed);
+				seedValue = Integer.parseInt(args[4]);
 			} catch (ArrayIndexOutOfBoundsException ind) { 
-				Seed = getSeed();
-				R = new RandomSeed(Seed);
+				seedValue = getSeed();
 			} catch (Exception ex) {
 				System.out.println("Seed input must be an integer"); // if seed is given, make sure it is an integer! 
 			}
+			RandomSeed seed = new RandomSeed(seedValue);
 			
 			//Generate timing mechanisms
 			TimingGeneratorFactory timeFactory = new TimingGeneratorFactory();
@@ -120,13 +118,13 @@ class MainProgram {
 			TIME_GENERATOR.initialize(Start, End, Entries);
 
 			// Create file to write generated data 
-			PrintWriter pw = new PrintWriter(new File("Immigration Test Data " + Seed + ".csv"));
+			PrintWriter pw = new PrintWriter(new File("Immigration Test Data " + seedValue + ".csv"));
 			StringBuilder sb = new StringBuilder();
 			
 			// Write column titles
 			sb.append("UUID"); 
 			sb.append(',');
-			sb.append("Flight No.");
+			sb.append("FlightGenerator No.");
 			sb.append(',');
 			sb.append("Departure Country");
 			sb.append(',');
@@ -158,76 +156,76 @@ class MainProgram {
 			sb.append('\n');
 			
 			/**
-			 * Start with max of 2 flights landed at the same time. Will look into how to generalize. 
-			 * Ultimately, want to have flights arriving on a schedule, so there could be multiple flights 
+			 * Start with max of 2 FlightGenerators landed at the same time. Will look into how to generalize. 
+			 * Ultimately, want to have FlightGenerators arriving on a schedule, so there could be multiple FlightGenerators 
 			 * 	going through immigration at a single time. 
 			 */
-			Flight flight1 = new Flight();	// Initialize the flights
-			Flight flight2 = new Flight();
-			ArrayList<String> flight1Info = flight1.getFlightInfo(R);
-			ArrayList<String> flight2Info = flight2.getFlightInfo(R);
+			FlightGenerator Flight1 = new FlightGenerator();	// Initialize the FlightGenerators
+			FlightGenerator Flight2 = new FlightGenerator();
+			ArrayList<String> Flight1Info = Flight1.getFlightInfo(seed);
+			ArrayList<String> Flight2Info = Flight2.getFlightInfo(seed);
 			
 			ArrayList<Integer> passengerRange = new ArrayList<Integer>(Arrays.asList(50, 150));
-			int r1 = R.randRange(passengerRange); // Generate number of passengers (currently between 50 and 150). 
-			int r2 = R.randRange(passengerRange);
+			int r1 = seed.randRange(passengerRange); // Generate number of passengers (currently between 50 and 150). 
+			int r2 = seed.randRange(passengerRange);
 			
-			int connectionSize = R.randRange(passengerRange);
+			int connectionSize = seed.randRange(passengerRange);
 			
-			int count1 = 0; // Use count to ensure that only the number of passengers on a flight go through immigration with that flight no. 
+			int count1 = 0; // Use count to ensure that only the number of passengers on a FlightGenerator go through immigration with that FlightGenerator no. 
 			int count2 = 0; 
 			
 			NationGenerator Nations = new NationGenerator(); // Get airport country name (currently, this is chosen at random). 
-			String thisCountry = Nations.getCountry(R).getCountryName();
+			String thisCountry = Nations.getCountry(seed).getCountryName();
 			
 			TravellerJourney onwards = new TravellerJourney();
-			Map<String, Integer> connections = onwards.onwardTo(R); // Can't have every passenger connecting to a different flight.
+			Map<String, Integer> connections = onwards.onwardTo(seed); // Can't have every passenger connecting to a different FlightGenerator.
 																 // Generate list of 7-10 countries travelers can fly on to. 
 			
 			// Each passenger is generated independently from the rest. Issues: there are no groups, families, etc. Very unrealistic. 
 			for ( int i=0; i<Entries; i++ ) {
 				
 				// Generate individual's passport and initiate their itinerary. 
-				Passport passport = new Passport();
+				PassportDataGenerator passportGenerator = new PassportDataGenerator();
 				TravellerJourney traveller = new TravellerJourney();
-				ArrayList<String> passportData = passport.getPassportData(R);
+				ArrayList<String> passportData = passportGenerator.getPassportData(seed);
 				
-				// Check if either flight has been completely processed. If either has, create a new flight.
+				// Check if either FlightGenerator has been completely processed. If either has, create a new FlightGenerator.
 				if (count1 == r1) {
-					flight1Info = flight1.getFlightInfo(R);
-					r1 = R.randRange(passengerRange);
+					Flight1Info = Flight1.getFlightInfo(seed);
+					r1 = seed.randRange(passengerRange);
 					count1 = 0;
 				} else if (count2 == r2) {
-					flight2Info = flight2.getFlightInfo(R);
-					r2 = R.randRange(passengerRange);
+					Flight2Info = Flight2.getFlightInfo(seed);
+					r2 = seed.randRange(passengerRange);
 					count2 = 0;
 				}
 				
-				// Initiate flight detail variables. 
-				String flightNo;
+				// Initiate FlightGenerator detail variables. 
+				String FlightNo;
 				String departureCountry;
 				
-				// Determine which flight this passenger was on. Equal probability.
-				if (R.nextDouble() <= 0.5) {
+				// Determine which FlightGenerator this passenger was on. Equal probability.
+				if (seed.nextDouble() <= 0.5) {
 					count1++;
-					flightNo = flight1Info.get(0);
-					departureCountry = flight1Info.get(1);
+					FlightNo = Flight1Info.get(0);
+					departureCountry = Flight1Info.get(1);
 				} else {
 					count2++;
-					flightNo = flight2Info.get(0);
-					departureCountry = flight2Info.get(1);
+					FlightNo = Flight2Info.get(0);
+					departureCountry = Flight2Info.get(1);
 				}
 				
 				String finalDestination; // Ominous variable name choice... 
 				
 				// Determine if traveler is connecting. Get final destination country. 
-				if (traveller.isConnecting(R)) {
-					finalDestination = traveller.getConnection(connections, R);
+				if (traveller.isConnecting(seed)) {
+					finalDestination = traveller.getConnection(connections, seed);
 					traveller.passengerBoarded(connections, finalDestination);
-					if (connections.get(finalDestination) == connectionSize) { // once the connecting flight is full, it departs and a new flight starts. 
-						traveller.connectionDeparted(connections, finalDestination, R);
-						connectionSize = R.randRange(passengerRange);
+					if (connections.get(finalDestination) == connectionSize) { // once the connecting FlightGenerator is full, it departs and a new FlightGenerator starts. 
+						traveller.connectionDeparted(connections, finalDestination, seed);
+						connectionSize = seed.randRange(passengerRange);
 					} else {
-						/* do nothing as the flight isn't full yet */
+						/* do nothing as the FlightGenerator isn't full yet */
 					}
 				} else {
 					finalDestination = thisCountry;
@@ -256,7 +254,7 @@ class MainProgram {
 				// Add details to string as appropriate 
 				sb.append(uuid); 
 				sb.append(',');
-				sb.append(flightNo);
+				sb.append(FlightNo);
 				sb.append(',');
 				sb.append(departureCountry);
 				sb.append(',');

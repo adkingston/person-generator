@@ -1,11 +1,11 @@
 {
 	"World": [{
-		"Continent": "Africa",
-		"Regions": [{
-			"Region": "Eastern Africa",
-			"Countries": [{
-				"Country": "Burundi",
-				"Cities": ["Makamba",
+		"continentName": "Africa",
+		"regions": [{
+			"regionName": "Eastern Africa",
+			"countries": [{
+				"countryName": "Burundi",
+				"cities": ["Makamba",
 				"Bururi",
 				"Bujumbura",
 				"Muramvya",
@@ -15,7 +15,7 @@
 				"Kayanza",
 				"Muyinga",
 				"Rutana"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.182,
 					"80+": 1.0009999999999999,
 					"30-34": 0.79300000000000004,
@@ -36,10 +36,10 @@
 				}
 			},
 			{
-				"Country": "Comoros",
-				"Cities": ["Moutsamoudou",
+				"countryName": "Comoros",
+				"cities": ["Moutsamoudou",
 				"Moroni"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.151,
 					"80+": 1.0009999999999999,
 					"30-34": 0.755,
@@ -60,13 +60,13 @@
 				}
 			},
 			{
-				"Country": "Djibouti",
-				"Cities": ["Tadjoura",
+				"countryName": "Djibouti",
+				"cities": ["Tadjoura",
 				"Obock",
 				"Djibouti",
 				"\u1e0e\u00e2nan",
 				"'Ali Sabieh"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.109,
 					"80+": 1.0009999999999999,
 					"30-34": 0.70199999999999996,
@@ -87,14 +87,14 @@
 				}
 			},
 			{
-				"Country": "Eritrea",
-				"Cities": ["Massawa",
+				"countryName": "Eritrea",
+				"cities": ["Massawa",
 				"Keren",
 				"Barentu",
 				"Asmara",
 				"Assab",
 				"Mendefera"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.154,
 					"80+": 1.002,
 					"30-34": 0.77900000000000003,
@@ -115,8 +115,8 @@
 				}
 			},
 			{
-				"Country": "Ethiopia",
-				"Cities": ["Ziway",
+				"countryName": "Ethiopia",
+				"cities": ["Ziway",
 				"Yirga \u2018Alem",
 				"Yab\u0113lo",
 				"Werota",
@@ -194,7 +194,7 @@
 				"\u0100d\u012bgrat",
 				"Addiet Canna",
 				"Abomsa"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.14899999999999999,
 					"80+": 1.0,
 					"30-34": 0.77300000000000002,
@@ -215,8 +215,8 @@
 				}
 			},
 			{
-				"Country": "Kenya",
-				"Cities": ["Webuye",
+				"countryName": "Kenya",
+				"cities": ["Webuye",
 				"Wajir",
 				"Voi",
 				"Thika",
@@ -268,7 +268,7 @@
 				"Athi River",
 				"Siaya",
 				"Ol Kalou"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.14799999999999999,
 					"80+": 1.0,
 					"30-34": 0.77500000000000002,
@@ -289,8 +289,8 @@
 				}
 			},
 			{
-				"Country": "Madagascar",
-				"Cities": ["Toamasina",
+				"countryName": "Madagascar",
+				"cities": ["Toamasina",
 				"Vondrozo",
 				"Vohipaho",
 				"Vohibinany",
@@ -374,7 +374,7 @@
 				"Ambanja",
 				"Ambalavao",
 				"Alarobia"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.153,
 					"80+": 1.002,
 					"30-34": 0.76300000000000001,
@@ -395,8 +395,8 @@
 				}
 			},
 			{
-				"Country": "Malawi",
-				"Cities": ["Karonga",
+				"countryName": "Malawi",
+				"cities": ["Karonga",
 				"Zomba",
 				"Salima",
 				"Rumphi",
@@ -413,7 +413,7 @@
 				"Dedza",
 				"Blantyre",
 				"Balaka"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.16400000000000001,
 					"80+": 1.0,
 					"30-34": 0.80200000000000005,
@@ -434,8 +434,8 @@
 				}
 			},
 			{
-				"Country": "Mauritius",
-				"Cities": ["Vacoas",
+				"countryName": "Mauritius",
+				"cities": ["Vacoas",
 				"Triolet",
 				"Saint Pierre",
 				"Quatre Bornes",
@@ -447,7 +447,7 @@
 				"Bel Air Rivi\u00e8re S\u00e8che",
 				"Beau Bassin",
 				"Le Hochet"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.055,
 					"80+": 1.002,
 					"30-34": 0.49199999999999999,
@@ -468,11 +468,11 @@
 				}
 			},
 			{
-				"Country": "Mayotte",
-				"Cities": ["Mamoudzou",
+				"countryName": "Mayotte",
+				"cities": ["Mamoudzou",
 				"Dzaoudzi",
 				"Koungou"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.14699999999999999,
 					"80+": 1.0,
 					"30-34": 0.74299999999999999,
@@ -493,8 +493,8 @@
 				}
 			},
 			{
-				"Country": "Mozambique",
-				"Cities": ["Xai-Xai",
+				"countryName": "Mozambique",
+				"cities": ["Xai-Xai",
 				"Dondo",
 				"Macia",
 				"Tete",
@@ -519,7 +519,7 @@
 				"Beira",
 				"Ant\u00f3nio Enes",
 				"Mutu\u00e1li"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.17299999999999999,
 					"80+": 1.0,
 					"30-34": 0.78400000000000003,
@@ -540,8 +540,8 @@
 				}
 			},
 			{
-				"Country": "R\u00e9union",
-				"Cities": ["Saint-Pierre",
+				"countryName": "R\u00e9union",
+				"cities": ["Saint-Pierre",
 				"Saint-Paul",
 				"Saint-Louis",
 				"Saint-Leu",
@@ -555,7 +555,7 @@
 				"Le Port",
 				"La Possession",
 				"Piton Saint-Leu"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.080000000000000002,
 					"80+": 1.002,
 					"30-34": 0.50600000000000001,
@@ -576,8 +576,8 @@
 				}
 			},
 			{
-				"Country": "Rwanda",
-				"Cities": ["Rwamagana",
+				"countryName": "Rwanda",
+				"cities": ["Rwamagana",
 				"Musanze",
 				"Nzega",
 				"Kigali",
@@ -588,7 +588,7 @@
 				"Gisenyi",
 				"Byumba",
 				"Butare"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.14899999999999999,
 					"80+": 1.002,
 					"30-34": 0.76900000000000002,
@@ -609,9 +609,9 @@
 				}
 			},
 			{
-				"Country": "Seychelles",
-				"Cities": ["Victoria"],
-				"Ages": {
+				"countryName": "Seychelles",
+				"cities": ["Victoria"],
+				"ageDistribution": {
 					"0-4": 0.084000000000000005,
 					"80+": 1.0009999999999999,
 					"30-34": 0.51600000000000001,
@@ -632,8 +632,8 @@
 				}
 			},
 			{
-				"Country": "Somalia",
-				"Cities": ["Wanlaweyn",
+				"countryName": "Somalia",
+				"cities": ["Wanlaweyn",
 				"Qoryooley",
 				"Qandala",
 				"Mogadishu",
@@ -660,7 +660,7 @@
 				"Afgooye",
 				"Laascaanood",
 				"Baki"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.184,
 					"80+": 1.0009999999999999,
 					"30-34": 0.79400000000000004,
@@ -681,8 +681,8 @@
 				}
 			},
 			{
-				"Country": "South Sudan",
-				"Cities": ["Yei",
+				"countryName": "South Sudan",
+				"cities": ["Yei",
 				"Yambio",
 				"Winejok",
 				"Wau",
@@ -695,7 +695,7 @@
 				"Gogrial",
 				"Pajok",
 				"Bor"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.158,
 					"80+": 1.0,
 					"30-34": 0.76500000000000001,
@@ -716,8 +716,8 @@
 				}
 			},
 			{
-				"Country": "Uganda",
-				"Cities": ["Yumbe",
+				"countryName": "Uganda",
+				"cities": ["Yumbe",
 				"Wobulenzi",
 				"Wakiso",
 				"Tororo",
@@ -765,7 +765,7 @@
 				"Bugiri",
 				"Arua",
 				"Adjumani"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.187,
 					"80+": 1.0,
 					"30-34": 0.81999999999999995,
@@ -786,8 +786,8 @@
 				}
 			},
 			{
-				"Country": "United Republic of Tanzania",
-				"Ages": {
+				"countryName": "United Republic of Tanzania",
+				"ageDistribution": {
 					"0-4": 0.17499999999999999,
 					"80+": 1.0,
 					"30-34": 0.78400000000000003,
@@ -808,8 +808,8 @@
 				}
 			},
 			{
-				"Country": "Zambia",
-				"Cities": ["Nchelenge",
+				"countryName": "Zambia",
+				"cities": ["Nchelenge",
 				"Mbala",
 				"Kawambwa",
 				"Siavonga",
@@ -838,7 +838,7 @@
 				"Chipata",
 				"Chingola",
 				"Chililabombwe"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.17100000000000001,
 					"80+": 1.0009999999999999,
 					"30-34": 0.80300000000000005,
@@ -859,8 +859,8 @@
 				}
 			},
 			{
-				"Country": "Zimbabwe",
-				"Cities": ["Zvishavane",
+				"countryName": "Zimbabwe",
+				"cities": ["Zvishavane",
 				"Victoria Falls",
 				"Shurugwi",
 				"Rusape",
@@ -886,7 +886,7 @@
 				"Beitbridge",
 				"Epworth",
 				"Chitungwiza"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.159,
 					"80+": 1.0009999999999999,
 					"30-34": 0.79200000000000004,
@@ -908,10 +908,10 @@
 			}]
 		},
 		{
-			"Region": "Middle Africa",
-			"Countries": [{
-				"Country": "Angola",
-				"Cities": ["Saurimo",
+			"regionName": "Middle Africa",
+			"countries": [{
+				"countryName": "Angola",
+				"cities": ["Saurimo",
 				"Lucapa",
 				"Luau",
 				"U\u00edge",
@@ -938,7 +938,7 @@
 				"Caluquembe",
 				"Ca\u00e1la",
 				"Benguela"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.185,
 					"80+": 1.0,
 					"30-34": 0.79500000000000004,
@@ -959,8 +959,8 @@
 				}
 			},
 			{
-				"Country": "Cameroon",
-				"Cities": ["Yaound\u00e9",
+				"countryName": "Cameroon",
+				"cities": ["Yaound\u00e9",
 				"Yagoua",
 				"Wum",
 				"Tonga",
@@ -1024,7 +1024,7 @@
 				"Bafang",
 				"Akonolinga",
 				"Idenao"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.16400000000000001,
 					"80+": 1.0,
 					"30-34": 0.77800000000000002,
@@ -1046,10 +1046,10 @@
 			}]
 		},
 		{
-			"Region": "Central African Republic",
-			"Countries": [{
-				"Country": "Chad",
-				"Cities": ["Fada",
+			"regionName": "Central African Republic",
+			"countries": [{
+				"countryName": "Chad",
+				"cities": ["Fada",
 				"Am Timan",
 				"Ab\u00e9ch\u00e9",
 				"Sarh",
@@ -1073,7 +1073,7 @@
 				"Bitkine",
 				"Benoy",
 				"Ati"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.186,
 					"80+": 1.0,
 					"30-34": 0.81000000000000005,
@@ -1094,8 +1094,8 @@
 				}
 			},
 			{
-				"Country": "Congo",
-				"Ages": {
+				"countryName": "Congo",
+				"ageDistribution": {
 					"0-4": 0.16300000000000001,
 					"80+": 1.0,
 					"30-34": 0.746,
@@ -1116,8 +1116,8 @@
 				}
 			},
 			{
-				"Country": "Democratic Republic of the Congo",
-				"Ages": {
+				"countryName": "Democratic Republic of the Congo",
+				"ageDistribution": {
 					"0-4": 0.185,
 					"80+": 1.0,
 					"30-34": 0.78200000000000003,
@@ -1138,11 +1138,11 @@
 				}
 			},
 			{
-				"Country": "Equatorial Guinea",
-				"Cities": ["Ebebiyin",
+				"countryName": "Equatorial Guinea",
+				"cities": ["Ebebiyin",
 				"Malabo",
 				"Bata"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.14999999999999999,
 					"80+": 1.0009999999999999,
 					"30-34": 0.755,
@@ -1163,8 +1163,8 @@
 				}
 			},
 			{
-				"Country": "Gabon",
-				"Cities": ["Tchibanga",
+				"countryName": "Gabon",
+				"cities": ["Tchibanga",
 				"Port-Gentil",
 				"Oyem",
 				"Mouila",
@@ -1173,7 +1173,7 @@
 				"Lambar\u00e9n\u00e9",
 				"Koulamoutou",
 				"Franceville"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.13800000000000001,
 					"80+": 1.0,
 					"30-34": 0.71199999999999997,
@@ -1194,9 +1194,9 @@
 				}
 			},
 			{
-				"Country": "Sao Tome and Principe",
-				"Cities": ["S\u00e3o Tom\u00e9"],
-				"Ages": {
+				"countryName": "Sao Tome and Principe",
+				"cities": ["S\u00e3o Tom\u00e9"],
+				"ageDistribution": {
 					"0-4": 0.159,
 					"80+": 1.0009999999999999,
 					"30-34": 0.77500000000000002,
@@ -1218,10 +1218,10 @@
 			}]
 		},
 		{
-			"Region": "Northern Africa",
-			"Countries": [{
-				"Country": "Algeria",
-				"Cities": ["Boumerdas",
+			"regionName": "Northern Africa",
+			"countries": [{
+				"countryName": "Algeria",
+				"cities": ["Boumerdas",
 				"Zeribet el Oued",
 				"Zeralda",
 				"Zemoura",
@@ -1468,7 +1468,7 @@
 				"Adrar",
 				"Abou el Hassan",
 				"BABOR - VILLE"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.11700000000000001,
 					"80+": 1.0009999999999999,
 					"30-34": 0.63700000000000001,
@@ -1489,8 +1489,8 @@
 				}
 			},
 			{
-				"Country": "Egypt",
-				"Cities": ["Zift\u00e1",
+				"countryName": "Egypt",
+				"cities": ["Zift\u00e1",
 				"Toukh",
 				"Tanda",
 				"\u0162\u0101miyah",
@@ -1610,7 +1610,7 @@
 				"Abn\u016bb",
 				"Az Zarq\u0101",
 				"Ain Sukhna"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.13200000000000001,
 					"80+": 1.002,
 					"30-34": 0.67500000000000004,
@@ -1631,8 +1631,8 @@
 				}
 			},
 			{
-				"Country": "Libya",
-				"Cities": ["Tobruk",
+				"countryName": "Libya",
+				"cities": ["Tobruk",
 				"Sul\u016bq",
 				"Darnah",
 				"Benghazi",
@@ -1673,7 +1673,7 @@
 				"Awb\u0101r\u012b",
 				"Al Khums",
 				"Al Jad\u012bd"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.10100000000000001,
 					"80+": 1.0,
 					"30-34": 0.64200000000000002,
@@ -1694,8 +1694,8 @@
 				}
 			},
 			{
-				"Country": "Morocco",
-				"Cities": ["Smara",
+				"countryName": "Morocco",
+				"cities": ["Smara",
 				"Za\u00efo",
 				"Zagora",
 				"Youssoufia",
@@ -1767,7 +1767,7 @@
 				"Skhirate",
 				"Boujniba",
 				"Dakhla"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.099000000000000005,
 					"80+": 1.002,
 					"30-34": 0.61599999999999999,
@@ -1788,8 +1788,8 @@
 				}
 			},
 			{
-				"Country": "Sudan",
-				"Cities": ["Zalingei",
+				"countryName": "Sudan",
+				"cities": ["Zalingei",
 				"Wad Medani",
 				"Umm Ruwaba",
 				"Omdurman",
@@ -1835,7 +1835,7 @@
 				"Ad-Damazin",
 				"Ab\u016b Zabad",
 				"Abu Jibeha"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.152,
 					"80+": 1.0,
 					"30-34": 0.754,
@@ -1856,8 +1856,8 @@
 				}
 			},
 			{
-				"Country": "Tunisia",
-				"Cities": ["Zaghouan",
+				"countryName": "Tunisia",
+				"cities": ["Zaghouan",
 				"Oued Lill",
 				"Tunis",
 				"Tozeur",
@@ -1929,7 +1929,7 @@
 				"El Alia",
 				"Akouda",
 				"Douane"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.090999999999999998,
 					"80+": 1.0,
 					"30-34": 0.56799999999999995,
@@ -1951,10 +1951,10 @@
 			}]
 		},
 		{
-			"Region": "Southern Africa",
-			"Countries": [{
-				"Country": "Botswana",
-				"Cities": ["Tonota",
+			"regionName": "Southern Africa",
+			"countries": [{
+				"countryName": "Botswana",
+				"cities": ["Tonota",
 				"Thamaga",
 				"Serowe",
 				"Selebi-Phikwe",
@@ -1972,7 +1972,7 @@
 				"Janeng",
 				"Gaborone",
 				"Francistown"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.11600000000000001,
 					"80+": 1.002,
 					"30-34": 0.70199999999999996,
@@ -1993,8 +1993,8 @@
 				}
 			},
 			{
-				"Country": "Lesotho",
-				"Cities": ["Quthing",
+				"countryName": "Lesotho",
+				"cities": ["Quthing",
 				"Qacha\u2019s Nek",
 				"Mohale\u2019s Hoek",
 				"Maseru",
@@ -2002,7 +2002,7 @@
 				"Mafeteng",
 				"Leribe",
 				"Butha-Buthe"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.129,
 					"80+": 1.0,
 					"30-34": 0.755,
@@ -2023,8 +2023,8 @@
 				}
 			},
 			{
-				"Country": "Namibia",
-				"Cities": ["Katima Mulilo",
+				"countryName": "Namibia",
+				"cities": ["Katima Mulilo",
 				"Windhoek",
 				"Swakopmund",
 				"Rundu",
@@ -2037,7 +2037,7 @@
 				"Grootfontein",
 				"Gobabis",
 				"Walvis Bay"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.13800000000000001,
 					"80+": 1.0009999999999999,
 					"30-34": 0.74199999999999999,
@@ -2058,8 +2058,8 @@
 				}
 			},
 			{
-				"Country": "South Africa",
-				"Cities": ["Roodepoort",
+				"countryName": "South Africa",
+				"cities": ["Roodepoort",
 				"Zeerust",
 				"Wolmaransstad",
 				"White River",
@@ -2223,7 +2223,7 @@
 				"Retreat",
 				"Diepsloot",
 				"Riverlea"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.10199999999999999,
 					"80+": 1.0,
 					"30-34": 0.65700000000000003,
@@ -2244,11 +2244,11 @@
 				}
 			},
 			{
-				"Country": "Swaziland",
-				"Cities": ["Mbabane",
+				"countryName": "Swaziland",
+				"cities": ["Mbabane",
 				"Manzini",
 				"Lobamba"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.13500000000000001,
 					"80+": 1.0009999999999999,
 					"30-34": 0.78200000000000003,
@@ -2270,10 +2270,10 @@
 			}]
 		},
 		{
-			"Region": "Western Africa",
-			"Countries": [{
-				"Country": "Benin",
-				"Cities": ["Tchaourou",
+			"regionName": "Western Africa",
+			"countries": [{
+				"countryName": "Benin",
+				"cities": ["Tchaourou",
 				"Tangui\u00e9ta",
 				"Sav\u00e9",
 				"Savalou",
@@ -2302,7 +2302,7 @@
 				"Allada",
 				"Abomey-Calavi",
 				"Abomey"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.16400000000000001,
 					"80+": 1.0,
 					"30-34": 0.76600000000000001,
@@ -2323,8 +2323,8 @@
 				}
 			},
 			{
-				"Country": "Burkina Faso",
-				"Cities": ["Zorgo",
+				"countryName": "Burkina Faso",
+				"cities": ["Zorgo",
 				"Yako",
 				"Tougan",
 				"Titao",
@@ -2356,7 +2356,7 @@
 				"Banfora",
 				"Gaoua",
 				"Orodara"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.17499999999999999,
 					"80+": 1.0,
 					"30-34": 0.79400000000000004,
@@ -2377,8 +2377,8 @@
 				}
 			},
 			{
-				"Country": "Cabo Verde",
-				"Ages": {
+				"countryName": "Cabo Verde",
+				"ageDistribution": {
 					"0-4": 0.10299999999999999,
 					"80+": 1.0,
 					"30-34": 0.70499999999999996,
@@ -2399,8 +2399,8 @@
 				}
 			},
 			{
-				"Country": "C\u00f4te d'Ivoire",
-				"Cities": ["Zu\u00e9noula",
+				"countryName": "C\u00f4te d'Ivoire",
+				"cities": ["Zu\u00e9noula",
 				"Yamoussoukro",
 				"Vavoua",
 				"Toumodi",
@@ -2457,7 +2457,7 @@
 				"Abengourou",
 				"S\u00e9gu\u00e9la",
 				"Soubr\u00e9"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.16300000000000001,
 					"80+": 1.0,
 					"30-34": 0.76700000000000002,
@@ -2478,14 +2478,14 @@
 				}
 			},
 			{
-				"Country": "Gambia",
-				"Cities": ["Sukuta",
+				"countryName": "Gambia",
+				"cities": ["Sukuta",
 				"Lamin",
 				"Farafenni",
 				"Brikama",
 				"Banjul",
 				"Bakau"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.17799999999999999,
 					"80+": 1.0009999999999999,
 					"30-34": 0.79600000000000004,
@@ -2506,8 +2506,8 @@
 				}
 			},
 			{
-				"Country": "Ghana",
-				"Cities": ["Yendi",
+				"countryName": "Ghana",
+				"cities": ["Yendi",
 				"Winneba",
 				"Wenchi",
 				"Wa",
@@ -2565,7 +2565,7 @@
 				"Achiaman",
 				"Accra",
 				"Aburi"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.14599999999999999,
 					"80+": 1.0,
 					"30-34": 0.73799999999999999,
@@ -2586,8 +2586,8 @@
 				}
 			},
 			{
-				"Country": "Guinea",
-				"Cities": ["Tougu\u00e9",
+				"countryName": "Guinea",
+				"cities": ["Tougu\u00e9",
 				"T\u00e9lim\u00e9l\u00e9",
 				"Siguiri",
 				"Pita",
@@ -2605,7 +2605,7 @@
 				"Conakry",
 				"Camayenne",
 				"Bok\u00e9"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.161,
 					"80+": 1.0,
 					"30-34": 0.76600000000000001,
@@ -2626,10 +2626,10 @@
 				}
 			},
 			{
-				"Country": "Guinea-Bissau",
-				"Cities": ["Bissau",
+				"countryName": "Guinea-Bissau",
+				"cities": ["Bissau",
 				"Bafat\u00e1"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.161,
 					"80+": 1.0009999999999999,
 					"30-34": 0.77100000000000002,
@@ -2650,8 +2650,8 @@
 				}
 			},
 			{
-				"Country": "Liberia",
-				"Cities": ["Zwedru",
+				"countryName": "Liberia",
+				"cities": ["Zwedru",
 				"New Yekepa",
 				"Voinjama",
 				"Monrovia",
@@ -2661,7 +2661,7 @@
 				"Gbarnga",
 				"Buchanan",
 				"Bensonville"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.157,
 					"80+": 1.0029999999999999,
 					"30-34": 0.76100000000000001,
@@ -2682,8 +2682,8 @@
 				}
 			},
 			{
-				"Country": "Mali",
-				"Cities": ["Yorosso",
+				"countryName": "Mali",
+				"cities": ["Yorosso",
 				"Timbuktu",
 				"Sikasso",
 				"S\u00e9gou",
@@ -2703,7 +2703,7 @@
 				"Banamba",
 				"Bamako",
 				"Bafoulab\u00e9"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.187,
 					"80+": 1.0,
 					"30-34": 0.80000000000000004,
@@ -2724,8 +2724,8 @@
 				}
 			},
 			{
-				"Country": "Mauritania",
-				"Cities": ["Zouerate",
+				"countryName": "Mauritania",
+				"cities": ["Zouerate",
 				"T\u00e9kane",
 				"S\u00e9libaby",
 				"Rosso",
@@ -2736,7 +2736,7 @@
 				"Ka\u00e9di",
 				"Atar",
 				"Aleg"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.153,
 					"80+": 1.0,
 					"30-34": 0.745,
@@ -2757,8 +2757,8 @@
 				}
 			},
 			{
-				"Country": "Niger",
-				"Cities": ["Birni N Konni",
+				"countryName": "Niger",
+				"cities": ["Birni N Konni",
 				"Zinder",
 				"Tillab\u00e9ri",
 				"Tibiri",
@@ -2783,7 +2783,7 @@
 				"Ayorou",
 				"Alaghsas",
 				"Agadez"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.20399999999999999,
 					"80+": 1.0,
 					"30-34": 0.79600000000000004,
@@ -2804,8 +2804,8 @@
 				}
 			},
 			{
-				"Country": "Nigeria",
-				"Cities": ["Zuru",
+				"countryName": "Nigeria",
+				"cities": ["Zuru",
 				"Zungeru",
 				"Zaria",
 				"Yola",
@@ -3047,7 +3047,7 @@
 				"Abakaliki",
 				"Aba",
 				"Degema Hulk"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.17199999999999999,
 					"80+": 1.0009999999999999,
 					"30-34": 0.77100000000000002,
@@ -3068,8 +3068,8 @@
 				}
 			},
 			{
-				"Country": "Senegal",
-				"Cities": ["Ziguinchor",
+				"countryName": "Senegal",
+				"cities": ["Ziguinchor",
 				"V\u00e9lingara",
 				"Touba",
 				"Ti\u00e9bo",
@@ -3099,7 +3099,7 @@
 				"Dakar",
 				"Bignona",
 				"N\u2019diareme limamoulaye"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.16600000000000001,
 					"80+": 1.0,
 					"30-34": 0.77500000000000002,
@@ -3120,8 +3120,8 @@
 				}
 			},
 			{
-				"Country": "Sierra Leone",
-				"Cities": ["Waterloo",
+				"countryName": "Sierra Leone",
+				"cities": ["Waterloo",
 				"Segbwema",
 				"Port Loko",
 				"Makeni",
@@ -3131,7 +3131,7 @@
 				"Kabala",
 				"Freetown",
 				"Bo"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.157,
 					"80+": 1.0,
 					"30-34": 0.77400000000000002,
@@ -3152,8 +3152,8 @@
 				}
 			},
 			{
-				"Country": "Togo",
-				"Cities": ["Vogan",
+				"countryName": "Togo",
+				"cities": ["Vogan",
 				"Ts\u00e9vi\u00e9",
 				"Tchamba",
 				"Sotouboua",
@@ -3170,7 +3170,7 @@
 				"Badou",
 				"Atakpam\u00e9",
 				"An\u00e9ho"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.157,
 					"80+": 1.0,
 					"30-34": 0.76100000000000001,
@@ -3193,12 +3193,12 @@
 		}]
 	},
 	{
-		"Continent": "Asia",
-		"Regions": [{
-			"Region": "Eastern Asia",
-			"Countries": [{
-				"Country": "China",
-				"Cities": ["Rikaze",
+		"continentName": "Asia",
+		"regions": [{
+			"regionName": "Eastern Asia",
+			"countries": [{
+				"countryName": "China",
+				"cities": ["Rikaze",
 				"Jiuquan",
 				"Shache",
 				"Qamdo",
@@ -4000,7 +4000,7 @@
 				"Ordos",
 				"Wenshan City",
 				"Liupanshui"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.060999999999999999,
 					"80+": 1.0,
 					"30-34": 0.47299999999999998,
@@ -4021,8 +4021,8 @@
 				}
 			},
 			{
-				"Country": "China; Hong Kong SAR",
-				"Ages": {
+				"countryName": "China; Hong Kong SAR",
+				"ageDistribution": {
 					"0-4": 0.037999999999999999,
 					"80+": 1.0029999999999999,
 					"30-34": 0.373,
@@ -4043,8 +4043,8 @@
 				}
 			},
 			{
-				"Country": "China; Macao SAR",
-				"Ages": {
+				"countryName": "China; Macao SAR",
+				"ageDistribution": {
 					"0-4": 0.052999999999999999,
 					"80+": 1.0009999999999999,
 					"30-34": 0.46100000000000002,
@@ -4065,8 +4065,8 @@
 				}
 			},
 			{
-				"Country": "China; Taiwan Province of China",
-				"Cities": ["Douliu",
+				"countryName": "China; Taiwan Province of China",
+				"cities": ["Douliu",
 				"Yujing",
 				"Taipei",
 				"Tainan",
@@ -4087,7 +4087,7 @@
 				"Taoyuan City",
 				"Taitung City",
 				"Zhongxing New Village"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.043999999999999997,
 					"80+": 1.002,
 					"30-34": 0.42199999999999999,
@@ -4108,8 +4108,8 @@
 				}
 			},
 			{
-				"Country": "Japan",
-				"Cities": ["Shing\u016b",
+				"countryName": "Japan",
+				"cities": ["Shing\u016b",
 				"Atsugi",
 				"Akashi",
 				"Zushi",
@@ -4846,7 +4846,7 @@
 				"Kamigy\u014d-ku",
 				"Buzen",
 				"Hokuto"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.042000000000000003,
 					"80+": 1.0,
 					"30-34": 0.33600000000000002,
@@ -4867,8 +4867,8 @@
 				}
 			},
 			{
-				"Country": "Mongolia",
-				"Cities": ["Uliastay",
+				"countryName": "Mongolia",
+				"cities": ["Uliastay",
 				"Ulaangom",
 				"\u00d6lgii",
 				"Khovd",
@@ -4889,7 +4889,7 @@
 				"Baruun-Urt",
 				"Arvayheer",
 				"\u0417\u0443\u0443\u043d\u043c\u043e\u0434"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.121,
 					"80+": 1.0009999999999999,
 					"30-34": 0.64700000000000002,
@@ -4910,8 +4910,8 @@
 				}
 			},
 			{
-				"Country": "Republic of Korea",
-				"Cities": ["Heunghae",
+				"countryName": "Republic of Korea",
+				"cities": ["Heunghae",
 				"Yeonil",
 				"Neietsu",
 				"Eisen",
@@ -5032,7 +5032,7 @@
 				"Seogwipo",
 				"Changnyeong",
 				"Sejong"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.043999999999999997,
 					"80+": 1.0,
 					"30-34": 0.41199999999999998,
@@ -5054,10 +5054,10 @@
 			}]
 		},
 		{
-			"Region": "Central Asia",
-			"Countries": [{
-				"Country": "Kazakhstan",
-				"Cities": ["Zhanaozen",
+			"regionName": "Central Asia",
+			"countries": [{
+				"countryName": "Kazakhstan",
+				"cities": ["Zhanaozen",
 				"Shalqar",
 				"Shalkar",
 				"Oral",
@@ -5136,7 +5136,7 @@
 				"Abay",
 				"Stepnogorsk",
 				"Kyzyl-Orda"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.112,
 					"80+": 1.0,
 					"30-34": 0.58899999999999997,
@@ -5157,8 +5157,8 @@
 				}
 			},
 			{
-				"Country": "Kyrgyzstan",
-				"Cities": ["Suluktu",
+				"countryName": "Kyrgyzstan",
+				"cities": ["Suluktu",
 				"Isfana",
 				"Balykchy",
 				"Tokmok",
@@ -5180,7 +5180,7 @@
 				"Bazar-Korgon",
 				"At-Bashi",
 				"Toktogul"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.128,
 					"80+": 1.0,
 					"30-34": 0.66900000000000004,
@@ -5201,8 +5201,8 @@
 				}
 			},
 			{
-				"Country": "Tajikistan",
-				"Cities": ["Yovon",
+				"countryName": "Tajikistan",
+				"cities": ["Yovon",
 				"Vose\u2019",
 				"Vakhsh",
 				"Istaravshan",
@@ -5227,7 +5227,7 @@
 				"Isfara",
 				"Chkalov",
 				"Moskovskiy"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.13600000000000001,
 					"80+": 1.0,
 					"30-34": 0.71899999999999997,
@@ -5248,8 +5248,8 @@
 				}
 			},
 			{
-				"Country": "Turkmenistan",
-				"Cities": ["Balkanabat",
+				"countryName": "Turkmenistan",
+				"cities": ["Balkanabat",
 				"Kaka",
 				"Gumdag",
 				"Gazanjyk",
@@ -5273,7 +5273,7 @@
 				"T\u00fcrkmenabat",
 				"Bayramaly",
 				"Gazojak"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.122,
 					"80+": 1.0009999999999999,
 					"30-34": 0.66400000000000003,
@@ -5294,8 +5294,8 @@
 				}
 			},
 			{
-				"Country": "Uzbekistan",
-				"Cities": ["Nukus",
+				"countryName": "Uzbekistan",
+				"cities": ["Nukus",
 				"Kh\u016djayli",
 				"Oltinko\u2018l",
 				"Zomin",
@@ -5391,7 +5391,7 @@
 				"Oltiariq",
 				"Quva",
 				"Navoiy"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.10299999999999999,
 					"80+": 1.0,
 					"30-34": 0.65600000000000003,
@@ -5413,10 +5413,10 @@
 			}]
 		},
 		{
-			"Region": "Southern Asia",
-			"Countries": [{
-				"Country": "Afghanistan",
-				"Cities": ["Zaranj",
+			"regionName": "Southern Asia",
+			"countries": [{
+				"countryName": "Afghanistan",
+				"cities": ["Zaranj",
 				"Taloqan",
 				"Sh\u012bn\u1e0fan\u1e0f",
 				"Shibirgh\u0101n",
@@ -5464,7 +5464,7 @@
 				"Andkh\u014dy",
 				"B\u0101z\u0101rak",
 				"Markaz-e Woluswal\u012b-ye \u0100ch\u012bn"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.155,
 					"80+": 1.0,
 					"30-34": 0.79100000000000004,
@@ -5485,8 +5485,8 @@
 				}
 			},
 			{
-				"Country": "Bangladesh",
-				"Cities": ["Th\u0101kurgaon",
+				"countryName": "Bangladesh",
+				"cities": ["Th\u0101kurgaon",
 				"Tekn\u0101f",
 				"Tungi",
 				"Sylhet",
@@ -5590,7 +5590,7 @@
 				"Azimpur",
 				"Paltan",
 				"Joymontop"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.095000000000000001,
 					"80+": 1.0009999999999999,
 					"30-34": 0.66200000000000003,
@@ -5611,12 +5611,12 @@
 				}
 			},
 			{
-				"Country": "Bhutan",
-				"Cities": ["Thimphu",
+				"countryName": "Bhutan",
+				"cities": ["Thimphu",
 				"Pun\u0101kha",
 				"Phuntsholing",
 				"Tsirang"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.089999999999999997,
 					"80+": 1.0009999999999999,
 					"30-34": 0.67300000000000004,
@@ -5637,8 +5637,8 @@
 				}
 			},
 			{
-				"Country": "India",
-				"Cities": ["P\u016bnch",
+				"countryName": "India",
+				"cities": ["P\u016bnch",
 				"Keelakarai",
 				"Zunheboto",
 				"Zam\u0101nia",
@@ -8086,7 +8086,7 @@
 				"Cherthala",
 				"Abrama",
 				"Malkapur"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.092999999999999999,
 					"80+": 1.0,
 					"30-34": 0.63700000000000001,
@@ -8107,8 +8107,8 @@
 				}
 			},
 			{
-				"Country": "Iran (Islamic Republic of)",
-				"Cities": ["\u0100z\u0101dshahr",
+				"countryName": "Iran (Islamic Republic of)",
+				"cities": ["\u0100z\u0101dshahr",
 				"Kahr\u012bz",
 				"N\u016br\u0101b\u0101d",
 				"\u012astg\u0101h-e R\u0101h \u0100han-e Garms\u0101r",
@@ -8305,7 +8305,7 @@
 				"Chabahar",
 				"Mahdishahr",
 				"Pasragad Branch"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.086999999999999994,
 					"80+": 1.0,
 					"30-34": 0.626,
@@ -8326,9 +8326,9 @@
 				}
 			},
 			{
-				"Country": "Maldives",
-				"Cities": ["Male"],
-				"Ages": {
+				"countryName": "Maldives",
+				"cities": ["Male"],
+				"ageDistribution": {
 					"0-4": 0.090999999999999998,
 					"80+": 1.0009999999999999,
 					"30-34": 0.67600000000000005,
@@ -8349,8 +8349,8 @@
 				}
 			},
 			{
-				"Country": "Nepal",
-				"Cities": ["W\u0101ling",
+				"countryName": "Nepal",
+				"cities": ["W\u0101ling",
 				"Tuls\u012bpur",
 				"T\u012bk\u0101pur",
 				"T\u0101nsen",
@@ -8389,7 +8389,7 @@
 				"Birendranagar",
 				"Dipayal",
 				"Nepalgunj"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.098000000000000004,
 					"80+": 1.0009999999999999,
 					"30-34": 0.68300000000000005,
@@ -8410,8 +8410,8 @@
 				}
 			},
 			{
-				"Country": "Pakistan",
-				"Cities": ["Chuhar Jam\u0101li",
+				"countryName": "Pakistan",
+				"cities": ["Chuhar Jam\u0101li",
 				"R\u0101wala Kot",
 				"Pir Jo Goth",
 				"Khairpur",
@@ -8724,7 +8724,7 @@
 				"Seth\u0101rja Old",
 				"Risalpur Cantonment",
 				"Malakwal City"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.13,
 					"80+": 1.0,
 					"30-34": 0.70999999999999996,
@@ -8745,8 +8745,8 @@
 				}
 			},
 			{
-				"Country": "Sri Lanka",
-				"Cities": ["Welisara",
+				"countryName": "Sri Lanka",
+				"cities": ["Welisara",
 				"Weligama",
 				"Wattala",
 				"Vavuniya",
@@ -8799,7 +8799,7 @@
 				"Ambalangoda",
 				"Shanjeev Home",
 				"Mount Lavinia"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.079000000000000001,
 					"80+": 1.0009999999999999,
 					"30-34": 0.53900000000000003,
@@ -8821,14 +8821,14 @@
 			}]
 		},
 		{
-			"Region": "South-Eastern Asia",
-			"Countries": [{
-				"Country": "Brunei Darussalam",
-				"Cities": ["Tutong",
+			"regionName": "South-Eastern Asia",
+			"countries": [{
+				"countryName": "Brunei Darussalam",
+				"cities": ["Tutong",
 				"Seria",
 				"Kuala Belait",
 				"Bandar Seri Begawan"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.080000000000000002,
 					"80+": 1.0009999999999999,
 					"30-34": 0.59599999999999997,
@@ -8849,8 +8849,8 @@
 				}
 			},
 			{
-				"Country": "Cambodia",
-				"Cities": ["Phnom Penh",
+				"countryName": "Cambodia",
+				"cities": ["Phnom Penh",
 				"Ta Khmau",
 				"Takeo",
 				"Svay Rieng",
@@ -8877,7 +8877,7 @@
 				"Ban L\u016dng",
 				"Battambang",
 				"Smach Mean Chey"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.114,
 					"80+": 1.0,
 					"30-34": 0.71399999999999997,
@@ -8898,8 +8898,8 @@
 				}
 			},
 			{
-				"Country": "Indonesia",
-				"Cities": ["Tongging",
+				"countryName": "Indonesia",
+				"cities": ["Tongging",
 				"Teluk Nibung",
 				"Tebingtinggi",
 				"Tanjungtiram",
@@ -9273,7 +9273,7 @@
 				"City of Balikpapan",
 				"Pekan Bahapal",
 				"South Tangerang"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.095000000000000001,
 					"80+": 1.002,
 					"30-34": 0.61499999999999999,
@@ -9294,8 +9294,8 @@
 				}
 			},
 			{
-				"Country": "Lao People's Democratic Republic",
-				"Ages": {
+				"countryName": "Lao People's Democratic Republic",
+				"ageDistribution": {
 					"0-4": 0.11600000000000001,
 					"80+": 1.002,
 					"30-34": 0.71699999999999997,
@@ -9316,8 +9316,8 @@
 				}
 			},
 			{
-				"Country": "Malaysia",
-				"Cities": ["Kuah",
+				"countryName": "Malaysia",
+				"cities": ["Kuah",
 				"Jerantut",
 				"Raub",
 				"Batu Pahat",
@@ -9455,7 +9455,7 @@
 				"Bandar Labuan",
 				"Subang Jaya",
 				"Putra Heights"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.084000000000000005,
 					"80+": 1.0009999999999999,
 					"30-34": 0.63300000000000001,
@@ -9476,8 +9476,8 @@
 				}
 			},
 			{
-				"Country": "Myanmar",
-				"Cities": ["Yenangyaung",
+				"countryName": "Myanmar",
+				"cities": ["Yenangyaung",
 				"Nyaungdon",
 				"Yamethin",
 				"Wakema",
@@ -9542,7 +9542,7 @@
 				"Pathein",
 				"Myaydo",
 				"Nay Pyi Taw"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.086999999999999994,
 					"80+": 1.0009999999999999,
 					"30-34": 0.61499999999999999,
@@ -9563,8 +9563,8 @@
 				}
 			},
 			{
-				"Country": "Philippines",
-				"Cities": ["Zamboanga",
+				"countryName": "Philippines",
+				"cities": ["Zamboanga",
 				"Wao",
 				"Virac",
 				"Vigan",
@@ -10003,7 +10003,7 @@
 				"Pasig City",
 				"Pandan",
 				"Apas"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.112,
 					"80+": 1.0,
 					"30-34": 0.67000000000000004,
@@ -10024,9 +10024,9 @@
 				}
 			},
 			{
-				"Country": "Singapore",
-				"Cities": ["Singapore"],
-				"Ages": {
+				"countryName": "Singapore",
+				"cities": ["Singapore"],
+				"ageDistribution": {
 					"0-4": 0.048000000000000001,
 					"80+": 1.0009999999999999,
 					"30-34": 0.42299999999999999,
@@ -10047,8 +10047,8 @@
 				}
 			},
 			{
-				"Country": "Thailand",
-				"Cities": ["Ban Talat Yai",
+				"countryName": "Thailand",
+				"cities": ["Ban Talat Yai",
 				"Ban Talat Nua",
 				"Sam Roi Yot",
 				"Phetchaburi",
@@ -10267,7 +10267,7 @@
 				"Wichit",
 				"Ban Chalong",
 				"Ban Ratsada"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.056000000000000001,
 					"80+": 1.0,
 					"30-34": 0.45500000000000002,
@@ -10288,8 +10288,8 @@
 				}
 			},
 			{
-				"Country": "Timor-Leste",
-				"Cities": ["Suai",
+				"countryName": "Timor-Leste",
+				"cities": ["Suai",
 				"Maubara",
 				"Maliana",
 				"Liquica",
@@ -10299,7 +10299,7 @@
 				"Same",
 				"Lospalos",
 				"Venilale"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.16500000000000001,
 					"80+": 1.0009999999999999,
 					"30-34": 0.77400000000000002,
@@ -10320,8 +10320,8 @@
 				}
 			},
 			{
-				"Country": "Viet Nam",
-				"Cities": ["Y\u00ean Vinh",
+				"countryName": "Viet Nam",
+				"cities": ["Y\u00ean Vinh",
 				"Y\u00ean B\u00e1i",
 				"V\u0169ng T\u00e0u",
 				"V\u1ecb Thanh",
@@ -10406,7 +10406,7 @@
 				"B\u1eafc K\u1ea1n",
 				"Cung Ki\u1ec7m",
 				"\u0110inh V\u0103n"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.083000000000000004,
 					"80+": 1.0,
 					"30-34": 0.57799999999999996,
@@ -10428,10 +10428,10 @@
 			}]
 		},
 		{
-			"Region": "Western Asia",
-			"Countries": [{
-				"Country": "Armenia",
-				"Cities": ["Kapan",
+			"regionName": "Western Asia",
+			"countries": [{
+				"countryName": "Armenia",
+				"cities": ["Kapan",
 				"Goris",
 				"Hats\u2019avan",
 				"Artashat",
@@ -10449,7 +10449,7 @@
 				"Gyumri",
 				"Ashtarak",
 				"Abovyan"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.070999999999999994,
 					"80+": 1.0009999999999999,
 					"30-34": 0.51800000000000002,
@@ -10470,8 +10470,8 @@
 				}
 			},
 			{
-				"Country": "Azerbaijan",
-				"Cities": ["Xankandi",
+				"countryName": "Azerbaijan",
+				"cities": ["Xankandi",
 				"\u018fhm\u0259db\u0259yli",
 				"Shushi",
 				"Salyan",
@@ -10527,7 +10527,7 @@
 				"A\u011fda\u015f",
 				"Agdzhabedy",
 				"Bak\u0131xanov"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.089999999999999997,
 					"80+": 1.0009999999999999,
 					"30-34": 0.58099999999999996,
@@ -10548,8 +10548,8 @@
 				}
 			},
 			{
-				"Country": "Bahrain",
-				"Cities": ["Sitrah",
+				"countryName": "Bahrain",
+				"cities": ["Sitrah",
 				"Mad\u012bnat \u2018\u012as\u00e1",
 				"Jidd \u1e28af\u015f",
 				"Mad\u012bnat \u1e28amad",
@@ -10557,7 +10557,7 @@
 				"Al Muharraq",
 				"Manama",
 				"Ar Rif\u0101\u2018"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.076999999999999999,
 					"80+": 1.0,
 					"30-34": 0.60599999999999998,
@@ -10578,15 +10578,15 @@
 				}
 			},
 			{
-				"Country": "Cyprus",
-				"Cities": ["Protaras",
+				"countryName": "Cyprus",
+				"cities": ["Protaras",
 				"Paphos",
 				"Nicosia",
 				"Limassol",
 				"Larnaca",
 				"Kyrenia",
 				"Famagusta"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.057000000000000002,
 					"80+": 1.0009999999999999,
 					"30-34": 0.501,
@@ -10607,8 +10607,8 @@
 				}
 			},
 			{
-				"Country": "Georgia",
-				"Cities": ["Zugdidi",
+				"countryName": "Georgia",
+				"cities": ["Zugdidi",
 				"Zestap\u2019oni",
 				"Ts\u2019khinvali",
 				"Tqvarch'eli",
@@ -10630,7 +10630,7 @@
 				"Akhaltsikhe",
 				"Stantsiya Novyy Afon",
 				"Tsqaltubo"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.070000000000000007,
 					"80+": 1.0009999999999999,
 					"30-34": 0.46000000000000002,
@@ -10651,8 +10651,8 @@
 				}
 			},
 			{
-				"Country": "Iraq",
-				"Cities": ["Zaxo",
+				"countryName": "Iraq",
+				"cities": ["Zaxo",
 				"Umm Qa\u015fr",
 				"Tozkhurmato",
 				"Tikr\u012bt",
@@ -10720,7 +10720,7 @@
 				"Al Ba\u015frah al Qad\u012bmah",
 				"Sinj\u0101r",
 				"\u2018Anah"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.155,
 					"80+": 1.0,
 					"30-34": 0.752,
@@ -10741,8 +10741,8 @@
 				}
 			},
 			{
-				"Country": "Israel",
-				"Cities": ["Jerusalem",
+				"countryName": "Israel",
+				"cities": ["Jerusalem",
 				"Modi\u2018in Makkabbim Re\u2018ut",
 				"Safed",
 				"Yehud",
@@ -10822,7 +10822,7 @@
 				"Modiin Ilit",
 				"Ariel",
 				"Kiryat Ono"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.10299999999999999,
 					"80+": 1.0,
 					"30-34": 0.56499999999999995,
@@ -10843,8 +10843,8 @@
 				}
 			},
 			{
-				"Country": "Jordan",
-				"Cities": ["W\u0101d\u012b as S\u012br",
+				"countryName": "Jordan",
+				"cities": ["W\u0101d\u012b as S\u012br",
 				"Umm as Summ\u0101q",
 				"Sa\u1e29\u0101b",
 				"Ma\u2019dab\u0101",
@@ -10871,7 +10871,7 @@
 				"Karak City",
 				"Russeifa",
 				"Rukban"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.13100000000000001,
 					"80+": 1.0,
 					"30-34": 0.71199999999999997,
@@ -10892,8 +10892,8 @@
 				}
 			},
 			{
-				"Country": "Kuwait",
-				"Cities": ["Jan\u016bb as Surrah",
+				"countryName": "Kuwait",
+				"cities": ["Jan\u016bb as Surrah",
 				"\u1e28awall\u012b",
 				"Bay\u0101n",
 				"As S\u0101lim\u012byah",
@@ -10911,7 +10911,7 @@
 				"Salw\u00e1",
 				"Ar R\u0101biyah",
 				"\u015eab\u0101\u1e29 as S\u0101lim"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.079000000000000001,
 					"80+": 1.0,
 					"30-34": 0.54100000000000004,
@@ -10932,8 +10932,8 @@
 				}
 			},
 			{
-				"Country": "Lebanon",
-				"Cities": ["Zahl\u00e9",
+				"countryName": "Lebanon",
+				"cities": ["Zahl\u00e9",
 				"Tripoli",
 				"Tyre",
 				"Sidon",
@@ -10946,7 +10946,7 @@
 				"Baalbek",
 				"En N\u00e2qo\u00fbra",
 				"Nabat\u00eey\u00e9 et Tahta"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.079000000000000001,
 					"80+": 1.0,
 					"30-34": 0.60999999999999999,
@@ -10967,8 +10967,8 @@
 				}
 			},
 			{
-				"Country": "Oman",
-				"Cities": ["Sur",
+				"countryName": "Oman",
+				"cities": ["Sur",
 				"Sohar",
 				"Suf\u0101lat Sam\u0101\u2019il",
 				"Shin\u0101\u015f",
@@ -10993,7 +10993,7 @@
 				"Al Buraym\u012b",
 				"\u0100dam",
 				"Yanqul"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.090999999999999998,
 					"80+": 1.0,
 					"30-34": 0.68500000000000005,
@@ -11014,13 +11014,13 @@
 				}
 			},
 			{
-				"Country": "Qatar",
-				"Cities": ["Umm \u015eal\u0101l Mu\u1e29ammad",
+				"countryName": "Qatar",
+				"cities": ["Umm \u015eal\u0101l Mu\u1e29ammad",
 				"Ar Rayy\u0101n",
 				"Al Wakrah",
 				"Al Khawr",
 				"Doha"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.050999999999999997,
 					"80+": 1.0,
 					"30-34": 0.62,
@@ -11041,8 +11041,8 @@
 				}
 			},
 			{
-				"Country": "Saudi Arabia",
-				"Cities": ["Yanbu",
+				"countryName": "Saudi Arabia",
+				"cities": ["Yanbu",
 				"Umm Lajj",
 				"Turaif",
 				"Turabah",
@@ -11102,7 +11102,7 @@
 				"Abha",
 				"Ash Shaf\u0101",
 				"Unaizah"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.094,
 					"80+": 1.0009999999999999,
 					"30-34": 0.60299999999999998,
@@ -11123,8 +11123,8 @@
 				}
 			},
 			{
-				"Country": "State of Palestine",
-				"Ages": {
+				"countryName": "State of Palestine",
+				"ageDistribution": {
 					"0-4": 0.14999999999999999,
 					"80+": 1.0009999999999999,
 					"30-34": 0.76800000000000002,
@@ -11145,8 +11145,8 @@
 				}
 			},
 			{
-				"Country": "Syrian Arab Republic",
-				"Cities": ["Yabr\u016bd",
+				"countryName": "Syrian Arab Republic",
+				"cities": ["Yabr\u016bd",
 				"\u0162ayyibat al Im\u0101m",
 				"Tartouss",
 				"Tall Rif\u2018at",
@@ -11220,7 +11220,7 @@
 				"Ad D\u0101n\u0101",
 				"\u0100lb\u016b Kam\u0101l",
 				"Haj\u012bn"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.11899999999999999,
 					"80+": 1.0,
 					"30-34": 0.72099999999999997,
@@ -11241,8 +11241,8 @@
 				}
 			},
 			{
-				"Country": "Turkey",
-				"Cities": ["Y\u00fcksekova",
+				"countryName": "Turkey",
+				"cities": ["Y\u00fcksekova",
 				"Yozgat",
 				"Ye\u015filli",
 				"Erzin",
@@ -11626,7 +11626,7 @@
 				"Karaba\u011flar",
 				"Muratpa\u015fa",
 				"Merkezefendi"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.085999999999999993,
 					"80+": 1.002,
 					"30-34": 0.58399999999999996,
@@ -11647,8 +11647,8 @@
 				}
 			},
 			{
-				"Country": "United Arab Emirates",
-				"Cities": ["Umm al Qaywayn",
+				"countryName": "United Arab Emirates",
+				"cities": ["Umm al Qaywayn",
 				"Ras al-Khaimah",
 				"Khawr Fakk\u0101n",
 				"Dubai",
@@ -11661,7 +11661,7 @@
 				"Ajman",
 				"Adh Dhayd",
 				"Abu Dhabi"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.050999999999999997,
 					"80+": 1.0,
 					"30-34": 0.55400000000000005,
@@ -11682,8 +11682,8 @@
 				}
 			},
 			{
-				"Country": "Yemen",
-				"Cities": ["Zinjib\u0101r",
+				"countryName": "Yemen",
+				"cities": ["Zinjib\u0101r",
 				"Zab\u012bd",
 				"Yar\u012bm",
 				"Ta\u2018izz",
@@ -11706,7 +11706,7 @@
 				"Al \u1e28azm",
 				"Al Bayda",
 				"Aden"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.14899999999999999,
 					"80+": 1.0009999999999999,
 					"30-34": 0.78700000000000003,
@@ -11729,12 +11729,12 @@
 		}]
 	},
 	{
-		"Continent": "Europe",
-		"Regions": [{
-			"Region": "Eastern Europe",
-			"Countries": [{
-				"Country": "Belarus",
-				"Cities": ["Horad Zhodzina",
+		"continentName": "Europe",
+		"regions": [{
+			"regionName": "Eastern Europe",
+			"countries": [{
+				"countryName": "Belarus",
+				"cities": ["Horad Zhodzina",
 				"Zhlobin",
 				"Vitebsk",
 				"Vilyeyka",
@@ -11784,7 +11784,7 @@
 				"Baranovichi",
 				"Babruysk",
 				"Malinovka"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.060999999999999999,
 					"80+": 1.0,
 					"30-34": 0.436,
@@ -11805,8 +11805,8 @@
 				}
 			},
 			{
-				"Country": "Bulgaria",
-				"Cities": ["Yambol",
+				"countryName": "Bulgaria",
+				"cities": ["Yambol",
 				"Vratsa",
 				"Vidin",
 				"Velingrad",
@@ -11861,7 +11861,7 @@
 				"Berkovitsa",
 				"Aytos",
 				"Asenovgrad"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.047,
 					"80+": 1.0,
 					"30-34": 0.373,
@@ -11882,8 +11882,8 @@
 				}
 			},
 			{
-				"Country": "Czechia",
-				"Ages": {
+				"countryName": "Czechia",
+				"ageDistribution": {
 					"0-4": 0.051999999999999998,
 					"80+": 1.0,
 					"30-34": 0.38900000000000001,
@@ -11904,8 +11904,8 @@
 				}
 			},
 			{
-				"Country": "Hungary",
-				"Cities": ["T\u00f6r\u00f6kszentmikl\u00f3s",
+				"countryName": "Hungary",
+				"cities": ["T\u00f6r\u00f6kszentmikl\u00f3s",
 				"Tisza\u00fajv\u00e1ros",
 				"Szolnok",
 				"Szentes",
@@ -12016,7 +12016,7 @@
 				"Budapest III. ker\u00fclet",
 				"Budapest II. ker\u00fclet",
 				"Budapest I. ker\u00fclet"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.045999999999999999,
 					"80+": 1.0,
 					"30-34": 0.38800000000000001,
@@ -12037,8 +12037,8 @@
 				}
 			},
 			{
-				"Country": "Poland",
-				"Cities": ["\u017byrard\u00f3w",
+				"countryName": "Poland",
+				"cities": ["\u017byrard\u00f3w",
 				"\u017boliborz",
 				"Zielonka",
 				"Zamo\u015b\u0107",
@@ -12365,7 +12365,7 @@
 				"Praga P\u00f3\u0142noc",
 				"Praga Po\u0142udnie",
 				"Jelcz Laskowice"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.050000000000000003,
 					"80+": 1.0,
 					"30-34": 0.42499999999999999,
@@ -12386,8 +12386,8 @@
 				}
 			},
 			{
-				"Country": "Republic of Moldova",
-				"Cities": ["Edine\u0163",
+				"countryName": "Republic of Moldova",
+				"cities": ["Edine\u0163",
 				"Ungheni",
 				"Tiraspol",
 				"Str\u0103\u0219eni",
@@ -12407,7 +12407,7 @@
 				"Cahul",
 				"Bender",
 				"B\u0103l\u0163i"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.055,
 					"80+": 1.0,
 					"30-34": 0.49199999999999999,
@@ -12428,8 +12428,8 @@
 				}
 			},
 			{
-				"Country": "Romania",
-				"Cities": ["Zimnicea",
+				"countryName": "Romania",
+				"cities": ["Zimnicea",
 				"Z\u0103rne\u0219ti",
 				"Zal\u0103u",
 				"Vulcan",
@@ -12564,7 +12564,7 @@
 				"Sector 4",
 				"Sector 5",
 				"Sector 6"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.049000000000000002,
 					"80+": 1.002,
 					"30-34": 0.40400000000000003,
@@ -12585,8 +12585,8 @@
 				}
 			},
 			{
-				"Country": "Russian Federation",
-				"Cities": ["Udomlya",
+				"countryName": "Russian Federation",
+				"cities": ["Udomlya",
 				"Sosnovka",
 				"Sasovo",
 				"Zyuzino",
@@ -13675,7 +13675,7 @@
 				"Svetlanovskiy",
 				"Sampsonievskiy",
 				"Vostochnoe Degunino"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.065000000000000002,
 					"80+": 1.0,
 					"30-34": 0.44400000000000001,
@@ -13696,8 +13696,8 @@
 				}
 			},
 			{
-				"Country": "Slovakia",
-				"Cities": ["Vranov nad Top\u013eou",
+				"countryName": "Slovakia",
+				"cities": ["Vranov nad Top\u013eou",
 				"Trebi\u0161ov",
 				"Star\u00e1 \u013dubov\u0148a",
 				"Spi\u0161sk\u00e1 Nov\u00e1 Ves",
@@ -13749,7 +13749,7 @@
 				"Bratislava",
 				"Bansk\u00e1 Bystrica",
 				"B\u00e1novce nad Bebravou"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.051999999999999998,
 					"80+": 1.0,
 					"30-34": 0.42899999999999999,
@@ -13770,8 +13770,8 @@
 				}
 			},
 			{
-				"Country": "Ukraine",
-				"Cities": ["Lebedyn",
+				"countryName": "Ukraine",
+				"cities": ["Lebedyn",
 				"Druzhkivka",
 				"Vasylivka",
 				"Zvenyhorodka",
@@ -14027,7 +14027,7 @@
 				"Slavutych",
 				"Yuzhnoukrains'k",
 				"Novoyavorivs'k"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.053999999999999999,
 					"80+": 1.0009999999999999,
 					"30-34": 0.42099999999999999,
@@ -14049,10 +14049,10 @@
 			}]
 		},
 		{
-			"Region": "Northern Europe",
-			"Countries": [{
-				"Country": "Channel Islands",
-				"Ages": {
+			"regionName": "Northern Europe",
+			"countries": [{
+				"countryName": "Channel Islands",
+				"ageDistribution": {
 					"0-4": 0.049000000000000002,
 					"80+": 1.0,
 					"30-34": 0.39100000000000001,
@@ -14073,8 +14073,8 @@
 				}
 			},
 			{
-				"Country": "Denmark",
-				"Cities": ["Viborg",
+				"countryName": "Denmark",
+				"cities": ["Viborg",
 				"Vejle",
 				"Vanl\u00f8se",
 				"Taastrup",
@@ -14124,7 +14124,7 @@
 				"Aalborg",
 				"Albertslund",
 				"Aabenraa"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.051999999999999998,
 					"80+": 1.0,
 					"30-34": 0.41599999999999998,
@@ -14145,8 +14145,8 @@
 				}
 			},
 			{
-				"Country": "Estonia",
-				"Cities": ["Viljandi",
+				"countryName": "Estonia",
+				"cities": ["Viljandi",
 				"Tartu",
 				"Tallinn",
 				"Sillam\u00e4e",
@@ -14155,7 +14155,7 @@
 				"Narva",
 				"Maardu",
 				"Kohtla-J\u00e4rve"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.053999999999999999,
 					"80+": 1.0,
 					"30-34": 0.40999999999999998,
@@ -14176,8 +14176,8 @@
 				}
 			},
 			{
-				"Country": "Finland",
-				"Cities": ["Yl\u00f6j\u00e4rvi",
+				"countryName": "Finland",
+				"cities": ["Yl\u00f6j\u00e4rvi",
 				"Vihti",
 				"Varkaus",
 				"Vantaa",
@@ -14245,7 +14245,7 @@
 				"Porvoo",
 				"Anjala",
 				"L\u00e4nsi-Turunmaa"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.055,
 					"80+": 1.0009999999999999,
 					"30-34": 0.40899999999999997,
@@ -14266,12 +14266,12 @@
 				}
 			},
 			{
-				"Country": "Iceland",
-				"Cities": ["Akureyri",
+				"countryName": "Iceland",
+				"cities": ["Akureyri",
 				"Reykjav\u00edk",
 				"K\u00f3pavogur",
 				"Hafnarfj\u00f6r\u00f0ur"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.069000000000000006,
 					"80+": 1.0,
 					"30-34": 0.48099999999999998,
@@ -14292,8 +14292,8 @@
 				}
 			},
 			{
-				"Country": "Ireland",
-				"Cities": ["Loch Garman",
+				"countryName": "Ireland",
+				"cities": ["Loch Garman",
 				"Waterford",
 				"Tralee",
 				"Tallaght",
@@ -14325,7 +14325,7 @@
 				"Athlone",
 				"Sandyford",
 				"Donaghmede"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.074999999999999997,
 					"80+": 1.0,
 					"30-34": 0.46899999999999997,
@@ -14346,8 +14346,8 @@
 				}
 			},
 			{
-				"Country": "Latvia",
-				"Cities": ["Valmiera",
+				"countryName": "Latvia",
+				"cities": ["Valmiera",
 				"Ventspils",
 				"Tukums",
 				"Salaspils",
@@ -14360,7 +14360,7 @@
 				"J\u0113kabpils",
 				"Daugavpils",
 				"C\u0113sis"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.050999999999999997,
 					"80+": 1.0,
 					"30-34": 0.40100000000000002,
@@ -14381,8 +14381,8 @@
 				}
 			},
 			{
-				"Country": "Lithuania",
-				"Cities": ["Visaginas",
+				"countryName": "Lithuania",
+				"cities": ["Visaginas",
 				"Vilnius",
 				"Utena",
 				"Ukmerge",
@@ -14417,7 +14417,7 @@
 				"Lazdynai",
 				"Vilkp\u0117d\u0117",
 				"Naujamiestis"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.051999999999999998,
 					"80+": 1.0009999999999999,
 					"30-34": 0.40300000000000002,
@@ -14438,8 +14438,8 @@
 				}
 			},
 			{
-				"Country": "Norway",
-				"Cities": ["Trondheim",
+				"countryName": "Norway",
+				"cities": ["Trondheim",
 				"Troms\u00f8",
 				"T\u00f8nsberg",
 				"Steinkjer",
@@ -14472,7 +14472,7 @@
 				"\u00c5lesund",
 				"Ask\u00f8y",
 				"Ytrebygda"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.058999999999999997,
 					"80+": 1.0,
 					"30-34": 0.44500000000000001,
@@ -14493,8 +14493,8 @@
 				}
 			},
 			{
-				"Country": "Sweden",
-				"Cities": ["Ume\u00e5",
+				"countryName": "Sweden",
+				"cities": ["Ume\u00e5",
 				"Skellefte\u00e5",
 				"Pite\u00e5",
 				"Lule\u00e5",
@@ -14598,7 +14598,7 @@
 				"Alings\u00e5s",
 				"\u00c5kersberga",
 				"Majorna"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.059999999999999998,
 					"80+": 1.0,
 					"30-34": 0.42699999999999999,
@@ -14619,8 +14619,8 @@
 				}
 			},
 			{
-				"Country": "United Kingdom",
-				"Cities": ["York",
+				"countryName": "United Kingdom",
+				"cities": ["York",
 				"Yeovil",
 				"Yeadon",
 				"Yate",
@@ -15168,7 +15168,7 @@
 				"Blantyre",
 				"Vale of Leven",
 				"Viewpark"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.062,
 					"80+": 1.0,
 					"30-34": 0.433,
@@ -15190,10 +15190,10 @@
 			}]
 		},
 		{
-			"Region": "Southern Europe",
-			"Countries": [{
-				"Country": "Albania",
-				"Cities": ["Sarand\u00eb",
+			"regionName": "Southern Europe",
+			"countries": [{
+				"countryName": "Albania",
+				"cities": ["Sarand\u00eb",
 				"Kuk\u00ebs",
 				"Kor\u00e7\u00eb",
 				"Gjirokast\u00ebr",
@@ -15213,7 +15213,7 @@
 				"Fier",
 				"Durr\u00ebs",
 				"Berat"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.058999999999999997,
 					"80+": 1.0,
 					"30-34": 0.48299999999999998,
@@ -15234,8 +15234,8 @@
 				}
 			},
 			{
-				"Country": "Bosnia and Herzegovina",
-				"Cities": ["Zenica",
+				"countryName": "Bosnia and Herzegovina",
+				"cities": ["Zenica",
 				"Visoko",
 				"Velika Kladu\u0161a",
 				"Tuzla",
@@ -15256,7 +15256,7 @@
 				"Biha\u0107",
 				"Banja Luka",
 				"Konjic"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.045999999999999999,
 					"80+": 1.0,
 					"30-34": 0.41699999999999998,
@@ -15277,8 +15277,8 @@
 				}
 			},
 			{
-				"Country": "Croatia",
-				"Cities": ["Zapre\u0161i\u0107",
+				"countryName": "Croatia",
+				"cities": ["Zapre\u0161i\u0107",
 				"Zagreb",
 				"Zadar",
 				"Vukovar",
@@ -15306,7 +15306,7 @@
 				"Zagreb- Stenjevec",
 				"Karlovac",
 				"Zagreb - Centar"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.048000000000000001,
 					"80+": 1.0,
 					"30-34": 0.39500000000000002,
@@ -15327,8 +15327,8 @@
 				}
 			},
 			{
-				"Country": "Greece",
-				"Cities": ["Vo\u00fala",
+				"countryName": "Greece",
+				"cities": ["Vo\u00fala",
 				"Volos",
 				"V\u00fdronas",
 				"V\u00e1ri",
@@ -15438,7 +15438,7 @@
 				"\u00c1gioi An\u00e1rgyroi",
 				"Agios Ioannis Rentis",
 				"N\u00e9a Ion\u00eda"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.044999999999999998,
 					"80+": 1.0,
 					"30-34": 0.371,
@@ -15459,8 +15459,8 @@
 				}
 			},
 			{
-				"Country": "Italy",
-				"Cities": ["Vittoria",
+				"countryName": "Italy",
+				"cities": ["Vittoria",
 				"Villabate",
 				"Vibo Valentia",
 				"Trapani",
@@ -16035,7 +16035,7 @@
 				"Arpino",
 				"Paolo VI",
 				"Corigliano Scalo"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.042999999999999997,
 					"80+": 1.0,
 					"30-34": 0.34000000000000002,
@@ -16056,13 +16056,13 @@
 				}
 			},
 			{
-				"Country": "Malta",
-				"Cities": ["\u017babbar",
+				"countryName": "Malta",
+				"cities": ["\u017babbar",
 				"Valletta",
 				"Qormi",
 				"Mosta",
 				"Birkirkara"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.049000000000000002,
 					"80+": 1.0009999999999999,
 					"30-34": 0.41399999999999998,
@@ -16083,8 +16083,8 @@
 				}
 			},
 			{
-				"Country": "Montenegro",
-				"Cities": ["Podgorica",
+				"countryName": "Montenegro",
+				"cities": ["Podgorica",
 				"Pljevlja",
 				"Nik\u0161i\u0107",
 				"Herceg-Novi",
@@ -16092,7 +16092,7 @@
 				"Budva",
 				"Bijelo Polje",
 				"Bar"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.058999999999999997,
 					"80+": 1.0,
 					"30-34": 0.46100000000000002,
@@ -16113,8 +16113,8 @@
 				}
 			},
 			{
-				"Country": "Portugal",
-				"Cities": ["Vila Franca de Xira",
+				"countryName": "Portugal",
+				"cities": ["Vila Franca de Xira",
 				"Vialonga",
 				"Torres Vedras",
 				"Tomar",
@@ -16227,7 +16227,7 @@
 				"Aveiro",
 				"\u00c1guas Santas",
 				"Ponta Delgada"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.042000000000000003,
 					"80+": 1.0009999999999999,
 					"30-34": 0.36399999999999999,
@@ -16248,8 +16248,8 @@
 				}
 			},
 			{
-				"Country": "Serbia",
-				"Cities": ["Zrenjanin",
+				"countryName": "Serbia",
+				"cities": ["Zrenjanin",
 				"Zemun",
 				"Zaje\u010dar",
 				"Vr\u0161ac",
@@ -16297,7 +16297,7 @@
 				"Ba\u010dka Palanka",
 				"Apatin",
 				"Knjazevac"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.052999999999999999,
 					"80+": 1.0,
 					"30-34": 0.42899999999999999,
@@ -16318,8 +16318,8 @@
 				}
 			},
 			{
-				"Country": "Slovenia",
-				"Cities": ["Trbovlje",
+				"countryName": "Slovenia",
+				"cities": ["Trbovlje",
 				"Velenje",
 				"Ptuj",
 				"Novo Mesto",
@@ -16328,7 +16328,7 @@
 				"Kranj",
 				"Koper",
 				"Celje"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.052999999999999999,
 					"80+": 1.0009999999999999,
 					"30-34": 0.38200000000000001,
@@ -16349,8 +16349,8 @@
 				}
 			},
 			{
-				"Country": "Spain",
-				"Cities": ["Zubia",
+				"countryName": "Spain",
+				"cities": ["Zubia",
 				"Zafra",
 				"Yecla",
 				"Villena",
@@ -16969,7 +16969,7 @@
 				"el Guinard\u00f3",
 				"Barri de Sant Andreu",
 				"Barri de les Corts"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.047,
 					"80+": 1.0,
 					"30-34": 0.36099999999999999,
@@ -16990,8 +16990,8 @@
 				}
 			},
 			{
-				"Country": "TFYR Macedonia",
-				"Cities": ["\u0416\u0435\u043b\u0438\u043d\u043e",
+				"countryName": "TFYR Macedonia",
+				"cities": ["\u0416\u0435\u043b\u0438\u043d\u043e",
 				"Vinica",
 				"Veles",
 				"Tetovo",
@@ -17029,7 +17029,7 @@
 				"Ilinden",
 				"Kisela Voda",
 				"Centar \u017dupa"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.056000000000000001,
 					"80+": 1.0,
 					"30-34": 0.46300000000000002,
@@ -17051,10 +17051,10 @@
 			}]
 		},
 		{
-			"Region": "Western Europe",
-			"Countries": [{
-				"Country": "Austria",
-				"Cities": ["Wolfsberg",
+			"regionName": "Western Europe",
+			"countries": [{
+				"countryName": "Austria",
+				"cities": ["Wolfsberg",
 				"Wiener Neustadt",
 				"Vienna",
 				"Wels",
@@ -17089,7 +17089,7 @@
 				"Baden",
 				"Amstetten",
 				"Ansfelden"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.047,
 					"80+": 1.0,
 					"30-34": 0.39200000000000002,
@@ -17110,8 +17110,8 @@
 				}
 			},
 			{
-				"Country": "Belgium",
-				"Cities": ["Zwijndrecht",
+				"countryName": "Belgium",
+				"cities": ["Zwijndrecht",
 				"Zwevegem",
 				"Zottegem",
 				"Zonhoven",
@@ -17295,7 +17295,7 @@
 				"Aarschot",
 				"Aalter",
 				"Aalst"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.057000000000000002,
 					"80+": 1.0,
 					"30-34": 0.41599999999999998,
@@ -17316,8 +17316,8 @@
 				}
 			},
 			{
-				"Country": "France",
-				"Cities": ["Yerres",
+				"countryName": "France",
+				"cities": ["Yerres",
 				"Wittenheim",
 				"Wattrelos",
 				"Wasquehal",
@@ -17950,7 +17950,7 @@
 				"La Defense",
 				"Saint-Quentin-en-Yvelines",
 				"Cergy-Pontoise"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.059999999999999998,
 					"80+": 1.002,
 					"30-34": 0.42399999999999999,
@@ -17971,8 +17971,8 @@
 				}
 			},
 			{
-				"Country": "Germany",
-				"Cities": ["Zwickau",
+				"countryName": "Germany",
+				"cities": ["Zwickau",
 				"Zweibr\u00fccken",
 				"Zulpich",
 				"Zossen",
@@ -19030,7 +19030,7 @@
 				"Gartenstadt",
 				"D\u00fcsseldorf-Pempelfort",
 				"Burglesum"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.042999999999999997,
 					"80+": 1.0009999999999999,
 					"30-34": 0.36299999999999999,
@@ -19051,11 +19051,11 @@
 				}
 			},
 			{
-				"Country": "Luxembourg",
-				"Cities": ["Luxembourg",
+				"countryName": "Luxembourg",
+				"cities": ["Luxembourg",
 				"Esch-sur-Alzette",
 				"Dudelange"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.055,
 					"80+": 1.0,
 					"30-34": 0.438,
@@ -19076,8 +19076,8 @@
 				}
 			},
 			{
-				"Country": "Netherlands",
-				"Cities": ["Zwolle",
+				"countryName": "Netherlands",
+				"cities": ["Zwolle",
 				"Zwijndrecht",
 				"Zutphen",
 				"Zoetermeer",
@@ -19300,7 +19300,7 @@
 				"Amsterdam-Zuidoost",
 				"Berkel en Rodenrijs",
 				"Ypenburg"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.052999999999999999,
 					"80+": 1.0009999999999999,
 					"30-34": 0.41399999999999998,
@@ -19321,8 +19321,8 @@
 				}
 			},
 			{
-				"Country": "Switzerland",
-				"Cities": ["Z\u00fcrich",
+				"countryName": "Switzerland",
+				"cities": ["Z\u00fcrich",
 				"Zug",
 				"Yverdon-les-Bains",
 				"Winterthur",
@@ -19405,7 +19405,7 @@
 				"Z\u00fcrich (Kreis 7)",
 				"Z\u00fcrich (Kreis 6)",
 				"Lancy"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.050999999999999997,
 					"80+": 1.0,
 					"30-34": 0.40100000000000002,
@@ -19428,13 +19428,13 @@
 		}]
 	},
 	{
-		"Continent": "Latin America And The Caribbean",
-		"Regions": [{
-			"Region": "Caribbean",
-			"Countries": [{
-				"Country": "Antigua and Barbuda",
-				"Cities": ["Saint John\u2019s"],
-				"Ages": {
+		"continentName": "Latin America And The Caribbean",
+		"regions": [{
+			"regionName": "Caribbean",
+			"countries": [{
+				"countryName": "Antigua and Barbuda",
+				"cities": ["Saint John\u2019s"],
+				"ageDistribution": {
 					"0-4": 0.080000000000000002,
 					"80+": 1.0,
 					"30-34": 0.56000000000000005,
@@ -19455,9 +19455,9 @@
 				}
 			},
 			{
-				"Country": "Aruba",
-				"Cities": ["Oranjestad"],
-				"Ages": {
+				"countryName": "Aruba",
+				"cities": ["Oranjestad"],
+				"ageDistribution": {
 					"0-4": 0.057000000000000002,
 					"80+": 1.002,
 					"30-34": 0.439,
@@ -19478,11 +19478,11 @@
 				}
 			},
 			{
-				"Country": "Bahamas",
-				"Cities": ["Nassau",
+				"countryName": "Bahamas",
+				"cities": ["Nassau",
 				"Lucaya",
 				"Freeport"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.071999999999999995,
 					"80+": 1.0,
 					"30-34": 0.54100000000000004,
@@ -19503,9 +19503,9 @@
 				}
 			},
 			{
-				"Country": "Barbados",
-				"Cities": ["Bridgetown"],
-				"Ages": {
+				"countryName": "Barbados",
+				"cities": ["Bridgetown"],
+				"ageDistribution": {
 					"0-4": 0.059999999999999998,
 					"80+": 1.0,
 					"30-34": 0.45000000000000001,
@@ -19526,8 +19526,8 @@
 				}
 			},
 			{
-				"Country": "Cuba",
-				"Cities": ["Yara",
+				"countryName": "Cuba",
+				"cities": ["Yara",
 				"Yaguajay",
 				"Vi\u00f1ales",
 				"Vertientes",
@@ -19654,7 +19654,7 @@
 				"Arroyo Naranjo",
 				"Boyeros",
 				"Diez de Octubre"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.055,
 					"80+": 1.0009999999999999,
 					"30-34": 0.42099999999999999,
@@ -19675,8 +19675,8 @@
 				}
 			},
 			{
-				"Country": "Cura\u00e7ao",
-				"Ages": {
+				"countryName": "Cura\u00e7ao",
+				"ageDistribution": {
 					"0-4": 0.062,
 					"80+": 1.0,
 					"30-34": 0.42199999999999999,
@@ -19697,8 +19697,8 @@
 				}
 			},
 			{
-				"Country": "Dominican Republic",
-				"Cities": ["Villa Francisca",
+				"countryName": "Dominican Republic",
+				"cities": ["Villa Francisca",
 				"Villa Consuelo",
 				"Villa Bison\u00f3",
 				"Villa Altagracia",
@@ -19745,7 +19745,7 @@
 				"Azua",
 				"Santo Domingo Oeste",
 				"Santo Domingo Este"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.10100000000000001,
 					"80+": 1.0009999999999999,
 					"30-34": 0.64000000000000001,
@@ -19766,9 +19766,9 @@
 				}
 			},
 			{
-				"Country": "Grenada",
-				"Cities": ["Saint George's"],
-				"Ages": {
+				"countryName": "Grenada",
+				"cities": ["Saint George's"],
+				"ageDistribution": {
 					"0-4": 0.092999999999999999,
 					"80+": 1.0,
 					"30-34": 0.63400000000000001,
@@ -19789,8 +19789,8 @@
 				}
 			},
 			{
-				"Country": "Guadeloupe",
-				"Cities": ["Sainte-Rose",
+				"countryName": "Guadeloupe",
+				"cities": ["Sainte-Rose",
 				"Sainte-Anne",
 				"Pointe-\u00e0-Pitre",
 				"Petit-Bourg",
@@ -19800,7 +19800,7 @@
 				"Capesterre-Belle-Eau",
 				"Basse-Terre",
 				"Baie-Mahault"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.059999999999999998,
 					"80+": 1.0,
 					"30-34": 0.42399999999999999,
@@ -19821,8 +19821,8 @@
 				}
 			},
 			{
-				"Country": "Haiti",
-				"Cities": ["Verrettes",
+				"countryName": "Haiti",
+				"cities": ["Verrettes",
 				"Thomazeau",
 				"Saint-Rapha\u00ebl",
 				"Saint-Marc",
@@ -19848,7 +19848,7 @@
 				"Carrefour",
 				"Okap",
 				"Ti Port-de-Paix"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.11600000000000001,
 					"80+": 1.0009999999999999,
 					"30-34": 0.71099999999999997,
@@ -19869,8 +19869,8 @@
 				}
 			},
 			{
-				"Country": "Jamaica",
-				"Cities": ["Spanish Town",
+				"countryName": "Jamaica",
+				"cities": ["Spanish Town",
 				"Savanna-la-Mar",
 				"Portmore",
 				"Old Harbour",
@@ -19881,7 +19881,7 @@
 				"Linstead",
 				"Kingston",
 				"Half Way Tree"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.071999999999999995,
 					"80+": 1.0,
 					"30-34": 0.58499999999999996,
@@ -19902,8 +19902,8 @@
 				}
 			},
 			{
-				"Country": "Martinique",
-				"Cities": ["Saint-Joseph",
+				"countryName": "Martinique",
+				"cities": ["Saint-Joseph",
 				"Sainte-Marie",
 				"Le Robert",
 				"Le Lamentin",
@@ -19911,7 +19911,7 @@
 				"La Trinit\u00e9",
 				"Fort-de-France",
 				"Ducos"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.051999999999999998,
 					"80+": 1.0,
 					"30-34": 0.39600000000000002,
@@ -19932,8 +19932,8 @@
 				}
 			},
 			{
-				"Country": "Puerto Rico",
-				"Cities": ["Aguadilla",
+				"countryName": "Puerto Rico",
+				"cities": ["Aguadilla",
 				"Arecibo",
 				"Barceloneta",
 				"Bayam\u00f3n",
@@ -19954,7 +19954,7 @@
 				"Trujillo Alto",
 				"Vega Baja",
 				"Yauco"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.056000000000000001,
 					"80+": 1.0009999999999999,
 					"30-34": 0.48099999999999998,
@@ -19975,9 +19975,9 @@
 				}
 			},
 			{
-				"Country": "Saint Lucia",
-				"Cities": ["Castries"],
-				"Ages": {
+				"countryName": "Saint Lucia",
+				"cities": ["Castries"],
+				"ageDistribution": {
 					"0-4": 0.062,
 					"80+": 1.0,
 					"30-34": 0.53500000000000003,
@@ -19998,8 +19998,8 @@
 				}
 			},
 			{
-				"Country": "Saint Vincent and the Grenadines",
-				"Ages": {
+				"countryName": "Saint Vincent and the Grenadines",
+				"ageDistribution": {
 					"0-4": 0.081000000000000003,
 					"80+": 1.0,
 					"30-34": 0.57599999999999996,
@@ -20020,8 +20020,8 @@
 				}
 			},
 			{
-				"Country": "Trinidad and Tobago",
-				"Cities": ["Tunapuna",
+				"countryName": "Trinidad and Tobago",
+				"cities": ["Tunapuna",
 				"Scarborough",
 				"Sangre Grande",
 				"San Fernando",
@@ -20034,7 +20034,7 @@
 				"Laventille",
 				"Chaguanas",
 				"Arima"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.070999999999999994,
 					"80+": 1.0,
 					"30-34": 0.52000000000000002,
@@ -20055,10 +20055,10 @@
 				}
 			},
 			{
-				"Country": "United States Virgin Islands",
-				"Cities": ["Charlotte Amalie",
+				"countryName": "United States Virgin Islands",
+				"cities": ["Charlotte Amalie",
 				"Saint Croix"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.067000000000000004,
 					"80+": 1.004,
 					"30-34": 0.43099999999999999,
@@ -20080,14 +20080,14 @@
 			}]
 		},
 		{
-			"Region": "Central America",
-			"Countries": [{
-				"Country": "Belize",
-				"Cities": ["San Ignacio",
+			"regionName": "Central America",
+			"countries": [{
+				"countryName": "Belize",
+				"cities": ["San Ignacio",
 				"Orange Walk",
 				"Belmopan",
 				"Belize City"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.109,
 					"80+": 1.0,
 					"30-34": 0.69799999999999995,
@@ -20108,8 +20108,8 @@
 				}
 			},
 			{
-				"Country": "Costa Rica",
-				"Cities": ["Turrialba",
+				"countryName": "Costa Rica",
+				"cities": ["Turrialba",
 				"Tejar",
 				"Siquirres",
 				"San Vicente",
@@ -20151,7 +20151,7 @@
 				"Aserr\u00ed",
 				"Alajuela",
 				"San Vicente de Moravia"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.072999999999999995,
 					"80+": 1.0,
 					"30-34": 0.55900000000000005,
@@ -20172,8 +20172,8 @@
 				}
 			},
 			{
-				"Country": "El Salvador",
-				"Cities": ["Zacatecoluca",
+				"countryName": "El Salvador",
+				"cities": ["Zacatecoluca",
 				"Usulut\u00e1n",
 				"Soyapango",
 				"Sonzacate",
@@ -20208,7 +20208,7 @@
 				"Ahuachap\u00e1n",
 				"Aguilares",
 				"Acajutla"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.091999999999999998,
 					"80+": 1.0009999999999999,
 					"30-34": 0.63600000000000001,
@@ -20229,8 +20229,8 @@
 				}
 			},
 			{
-				"Country": "Guatemala",
-				"Cities": ["Zacapa",
+				"countryName": "Guatemala",
+				"cities": ["Zacapa",
 				"Villa Nueva",
 				"Villa Canales",
 				"Totonicap\u00e1n",
@@ -20311,7 +20311,7 @@
 				"Antigua Guatemala",
 				"Amatitl\u00e1n",
 				"Alotenango"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.123,
 					"80+": 1.0009999999999999,
 					"30-34": 0.73499999999999999,
@@ -20332,8 +20332,8 @@
 				}
 			},
 			{
-				"Country": "Honduras",
-				"Cities": ["Puerto Cortez",
+				"countryName": "Honduras",
+				"cities": ["Puerto Cortez",
 				"Yoro",
 				"Villanueva",
 				"Tocoa",
@@ -20357,7 +20357,7 @@
 				"Cofrad\u00eda",
 				"Ciudad Choluteca",
 				"Choloma"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.107,
 					"80+": 1.0,
 					"30-34": 0.70699999999999996,
@@ -20378,8 +20378,8 @@
 				}
 			},
 			{
-				"Country": "Mexico",
-				"Cities": ["San Fernando",
+				"countryName": "Mexico",
+				"cities": ["San Fernando",
 				"Zumpango",
 				"Zumpango del R\u00edo",
 				"Zacualtip\u00e1n",
@@ -20939,7 +20939,7 @@
 				"Venceremos",
 				"Alborada Jaltenco",
 				"Crucecita"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.091999999999999998,
 					"80+": 1.002,
 					"30-34": 0.621,
@@ -20960,8 +20960,8 @@
 				}
 			},
 			{
-				"Country": "Nicaragua",
-				"Cities": ["Tipitapa",
+				"countryName": "Nicaragua",
+				"cities": ["Tipitapa",
 				"Somoto",
 				"Somotillo",
 				"Siuna",
@@ -20997,7 +20997,7 @@
 				"Boaco",
 				"Bluefields",
 				"Ciudad Sandino"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.10000000000000001,
 					"80+": 1.0,
 					"30-34": 0.67300000000000004,
@@ -21018,8 +21018,8 @@
 				}
 			},
 			{
-				"Country": "Panama",
-				"Cities": ["Vista Alegre",
+				"countryName": "Panama",
+				"cities": ["Vista Alegre",
 				"Veracruz",
 				"Tocumen",
 				"Santiago de Veraguas",
@@ -21043,7 +21043,7 @@
 				"Arraij\u00e1n",
 				"Alcalde D\u00edaz",
 				"Aguadulce"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.097000000000000003,
 					"80+": 1.0009999999999999,
 					"30-34": 0.59899999999999998,
@@ -21065,10 +21065,10 @@
 			}]
 		},
 		{
-			"Region": "South America",
-			"Countries": [{
-				"Country": "Argentina",
-				"Cities": ["Z\u00e1rate",
+			"regionName": "South America",
+			"countries": [{
+				"countryName": "Argentina",
+				"cities": ["Z\u00e1rate",
 				"Villa Ort\u00fazar",
 				"Villa Ocampo",
 				"Villa Lugano",
@@ -21273,7 +21273,7 @@
 				"Villa Mercedes",
 				"San Carlos de Bariloche",
 				"Adrogu\u00e9"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.085999999999999993,
 					"80+": 1.0009999999999999,
 					"30-34": 0.56200000000000006,
@@ -21294,8 +21294,8 @@
 				}
 			},
 			{
-				"Country": "Bolivia (Plurinational State of)",
-				"Cities": ["Yacuiba",
+				"countryName": "Bolivia (Plurinational State of)",
+				"cities": ["Yacuiba",
 				"Warnes",
 				"Villaz\u00f3n",
 				"Villa Yapacan\u00ed",
@@ -21322,7 +21322,7 @@
 				"Cochabamba",
 				"Cobija",
 				"Camiri"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.111,
 					"80+": 1.002,
 					"30-34": 0.67600000000000005,
@@ -21343,8 +21343,8 @@
 				}
 			},
 			{
-				"Country": "Brazil",
-				"Cities": ["Vit\u00f3ria do Mearim",
+				"countryName": "Brazil",
+				"cities": ["Vit\u00f3ria do Mearim",
 				"Vit\u00f3ria de Santo Ant\u00e3o",
 				"Viseu",
 				"Conde",
@@ -22546,7 +22546,7 @@
 				"Trindade",
 				"Freguesia do Ribeirao da Ilha",
 				"Planaltina"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.071999999999999995,
 					"80+": 1.0,
 					"30-34": 0.56399999999999995,
@@ -22567,8 +22567,8 @@
 				}
 			},
 			{
-				"Country": "Chile",
-				"Cities": ["Vi\u00f1a del Mar",
+				"countryName": "Chile",
+				"cities": ["Vi\u00f1a del Mar",
 				"Villarrica",
 				"Villa Alemana",
 				"Victoria",
@@ -22665,7 +22665,7 @@
 				"Las Animas",
 				"La Pintana",
 				"Lo Prado"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.067000000000000004,
 					"80+": 1.0,
 					"30-34": 0.51900000000000002,
@@ -22686,8 +22686,8 @@
 				}
 			},
 			{
-				"Country": "Colombia",
-				"Cities": ["Zipaquir\u00e1",
+				"countryName": "Colombia",
+				"cities": ["Zipaquir\u00e1",
 				"Zarzal",
 				"Zaragoza",
 				"Yumbo",
@@ -22904,7 +22904,7 @@
 				"Agust\u00edn Codazzi",
 				"Plato",
 				"San Jos\u00e9 del Guaviare"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.078,
 					"80+": 1.0,
 					"30-34": 0.58099999999999996,
@@ -22925,8 +22925,8 @@
 				}
 			},
 			{
-				"Country": "Ecuador",
-				"Cities": ["Zamora",
+				"countryName": "Ecuador",
+				"cities": ["Zamora",
 				"Yaguachi Nuevo",
 				"Vinces",
 				"Ventanas",
@@ -22993,7 +22993,7 @@
 				"Atuntaqui",
 				"Ambato",
 				"Tutamandahostel"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.10000000000000001,
 					"80+": 1.0,
 					"30-34": 0.63200000000000001,
@@ -23014,13 +23014,13 @@
 				}
 			},
 			{
-				"Country": "French Guiana",
-				"Cities": ["Saint-Laurent-du-Maroni",
+				"countryName": "French Guiana",
+				"cities": ["Saint-Laurent-du-Maroni",
 				"R\u00e9mire-Montjoly",
 				"Matoury",
 				"Kourou",
 				"Cayenne"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.11899999999999999,
 					"80+": 1.0,
 					"30-34": 0.63900000000000001,
@@ -23041,11 +23041,11 @@
 				}
 			},
 			{
-				"Country": "Guyana",
-				"Cities": ["New Amsterdam",
+				"countryName": "Guyana",
+				"cities": ["New Amsterdam",
 				"Linden",
 				"Georgetown"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.098000000000000004,
 					"80+": 1.0,
 					"30-34": 0.63500000000000001,
@@ -23066,8 +23066,8 @@
 				}
 			},
 			{
-				"Country": "Paraguay",
-				"Cities": ["Villarrica",
+				"countryName": "Paraguay",
+				"cities": ["Villarrica",
 				"Villa Hayes",
 				"Villa Elisa",
 				"San Lorenzo",
@@ -23092,7 +23092,7 @@
 				"Caaguaz\u00fa",
 				"Caacup\u00e9",
 				"Asunci\u00f3n"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.10199999999999999,
 					"80+": 1.0,
 					"30-34": 0.67400000000000004,
@@ -23113,8 +23113,8 @@
 				}
 			},
 			{
-				"Country": "Peru",
-				"Cities": ["Yurimaguas",
+				"countryName": "Peru",
+				"cities": ["Yurimaguas",
 				"Vir\u00fa",
 				"Uchiza",
 				"Tumbes",
@@ -23221,7 +23221,7 @@
 				"Andahuaylas",
 				"Abancay",
 				"La Rinconada"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.096000000000000002,
 					"80+": 1.0,
 					"30-34": 0.622,
@@ -23242,10 +23242,10 @@
 				}
 			},
 			{
-				"Country": "Suriname",
-				"Cities": ["Paramaribo",
+				"countryName": "Suriname",
+				"cities": ["Paramaribo",
 				"Lelydorp"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.089999999999999997,
 					"80+": 1.0,
 					"30-34": 0.59699999999999998,
@@ -23266,8 +23266,8 @@
 				}
 			},
 			{
-				"Country": "Uruguay",
-				"Cities": ["Young",
+				"countryName": "Uruguay",
+				"cities": ["Young",
 				"Trinidad",
 				"Trinidad",
 				"Treinta y Tres",
@@ -23298,7 +23298,7 @@
 				"Carmelo",
 				"Canelones",
 				"Artigas"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.070000000000000007,
 					"80+": 1.0009999999999999,
 					"30-34": 0.502,
@@ -23319,8 +23319,8 @@
 				}
 			},
 			{
-				"Country": "Venezuela (Bolivarian Republic of)",
-				"Ages": {
+				"countryName": "Venezuela (Bolivarian Republic of)",
+				"ageDistribution": {
 					"0-4": 0.095000000000000001,
 					"80+": 1.0,
 					"30-34": 0.62,
@@ -23343,12 +23343,12 @@
 		}]
 	},
 	{
-		"Continent": "Northern America",
-		"Regions": [{
-			"Region": "South America",
-			"Countries": [{
-				"Country": "Canada",
-				"Cities": ["Abbotsford",
+		"continentName": "Northern America",
+		"regions": [{
+			"regionName": "South America",
+			"countries": [{
+				"countryName": "Canada",
+				"cities": ["Abbotsford",
 				"Airdrie",
 				"Ajax",
 				"Alma",
@@ -23572,7 +23572,7 @@
 				"West Vancouver",
 				"Willowdale",
 				"Lower Sackville"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.053999999999999999,
 					"80+": 1.0,
 					"30-34": 0.42599999999999999,
@@ -23593,8 +23593,8 @@
 				}
 			},
 			{
-				"Country": "United States of America",
-				"Cities": ["Fort Hunt",
+				"countryName": "United States of America",
+				"cities": ["Fort Hunt",
 				"Bessemer",
 				"Paducah",
 				"Birmingham",
@@ -23700,8 +23700,8 @@
 				"Coral Gables",
 				"Coral Springs",
 				"Coral Terrace",
-				"Country Walk",
-				"Country Club",
+				"countryName Walk",
+				"countryName Club",
 				"Crestview",
 				"Cutler",
 				"Cutler Ridge",
@@ -23869,7 +23869,7 @@
 				"The Villages",
 				"Three Lakes",
 				"Titusville",
-				"Town 'n' Country",
+				"Town 'n' countryName",
 				"University Park",
 				"Valrico",
 				"Venice",
@@ -24657,7 +24657,7 @@
 				"Chicago",
 				"Chicago Heights",
 				"Cicero",
-				"Country Club Hills",
+				"countryName Club Hills",
 				"Crest Hill",
 				"Crystal Lake",
 				"Danville",
@@ -26456,7 +26456,7 @@
 				"Cranberry Township",
 				"Silver Lake",
 				"Echo Park"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.062,
 					"80+": 1.0,
 					"30-34": 0.46700000000000003,
@@ -26479,12 +26479,12 @@
 		}]
 	},
 	{
-		"Continent": "Oceania",
-		"Regions": [{
-			"Region": "Australia/New Zealand",
-			"Countries": [{
-				"Country": "Australia",
-				"Cities": ["Whyalla",
+		"continentName": "Oceania",
+		"regions": [{
+			"regionName": "Australia/New Zealand",
+			"countries": [{
+				"countryName": "Australia",
+				"cities": ["Whyalla",
 				"Rockingham",
 				"Prospect",
 				"Port Hedland",
@@ -26685,7 +26685,7 @@
 				"Sunshine West",
 				"Altona Meadows",
 				"West Pennant"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.065000000000000002,
 					"80+": 1.0,
 					"30-34": 0.46800000000000003,
@@ -26706,8 +26706,8 @@
 				}
 			},
 			{
-				"Country": "New Zealand",
-				"Cities": ["Wellington",
+				"countryName": "New Zealand",
+				"cities": ["Wellington",
 				"Wanganui",
 				"Timaru",
 				"Taupo",
@@ -26742,7 +26742,7 @@
 				"Upper Hutt",
 				"Taradale",
 				"Waitakere"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.067000000000000004,
 					"80+": 1.0,
 					"30-34": 0.47099999999999997,
@@ -26764,14 +26764,14 @@
 			}]
 		},
 		{
-			"Region": "Melanesia",
-			"Countries": [{
-				"Country": "Fiji",
-				"Cities": ["Suva",
+			"regionName": "Melanesia",
+			"countries": [{
+				"countryName": "Fiji",
+				"cities": ["Suva",
 				"Nadi",
 				"Lautoka",
 				"Labasa"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.099000000000000005,
 					"80+": 1.002,
 					"30-34": 0.622,
@@ -26792,11 +26792,11 @@
 				}
 			},
 			{
-				"Country": "New Caledonia",
-				"Cities": ["Noum\u00e9a",
+				"countryName": "New Caledonia",
+				"cities": ["Noum\u00e9a",
 				"Mont-Dore",
 				"Dumb\u00e9a"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.079000000000000001,
 					"80+": 1.0009999999999999,
 					"30-34": 0.52900000000000003,
@@ -26817,8 +26817,8 @@
 				}
 			},
 			{
-				"Country": "Papua New Guinea",
-				"Cities": ["Wewak",
+				"countryName": "Papua New Guinea",
+				"cities": ["Wewak",
 				"Port Moresby",
 				"Popondetta",
 				"Mount Hagen",
@@ -26831,7 +26831,7 @@
 				"Daru",
 				"Bulolo",
 				"Arawa"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.129,
 					"80+": 1.0,
 					"30-34": 0.71299999999999997,
@@ -26852,9 +26852,9 @@
 				}
 			},
 			{
-				"Country": "Solomon Islands",
-				"Cities": ["Honiara"],
-				"Ages": {
+				"countryName": "Solomon Islands",
+				"cities": ["Honiara"],
+				"ageDistribution": {
 					"0-4": 0.14099999999999999,
 					"80+": 1.0,
 					"30-34": 0.73399999999999999,
@@ -26875,9 +26875,9 @@
 				}
 			},
 			{
-				"Country": "Vanuatu",
-				"Cities": ["Port-Vila"],
-				"Ages": {
+				"countryName": "Vanuatu",
+				"cities": ["Port-Vila"],
+				"ageDistribution": {
 					"0-4": 0.13300000000000001,
 					"80+": 1.0,
 					"30-34": 0.71299999999999997,
@@ -26899,16 +26899,16 @@
 			}]
 		},
 		{
-			"Region": "Micronesia",
-			"Countries": [{
-				"Country": "Guam",
-				"Cities": ["Tamuning-Tumon-Harmon Village",
+			"regionName": "Micronesia",
+			"countries": [{
+				"countryName": "Guam",
+				"cities": ["Tamuning-Tumon-Harmon Village",
 				"Yigo Village",
 				"Guam Government House",
 				"Dededo Village",
 				"Hag\u00e5t\u00f1a",
 				"Mangilao Village"],
-				"Ages": {
+				"ageDistribution": {
 					"0-4": 0.085999999999999993,
 					"80+": 1.0,
 					"30-34": 0.55900000000000005,
@@ -26929,9 +26929,9 @@
 				}
 			},
 			{
-				"Country": "Kiribati",
-				"Cities": ["Tarawa"],
-				"Ages": {
+				"countryName": "Kiribati",
+				"cities": ["Tarawa"],
+				"ageDistribution": {
 					"0-4": 0.13300000000000001,
 					"80+": 1.0,
 					"30-34": 0.70699999999999996,
@@ -26952,9 +26952,9 @@
 				}
 			},
 			{
-				"Country": "Micronesia (Fed. States of)",
-				"Cities": ["Palikir - National Government Center"],
-				"Ages": {
+				"countryName": "Micronesia (Fed. States of)",
+				"cities": ["Palikir - National Government Center"],
+				"ageDistribution": {
 					"0-4": 0.113,
 					"80+": 1.0,
 					"30-34": 0.74399999999999999,
@@ -26976,11 +26976,11 @@
 			}]
 		},
 		{
-			"Region": "French Polynesia",
-			"Countries": [{
-				"Country": "Samoa",
-				"Cities": ["Apia"],
-				"Ages": {
+			"regionName": "French Polynesia",
+			"countries": [{
+				"countryName": "Samoa",
+				"cities": ["Apia"],
+				"ageDistribution": {
 					"0-4": 0.124,
 					"80+": 1.0,
 					"30-34": 0.68899999999999995,
@@ -27001,9 +27001,9 @@
 				}
 			},
 			{
-				"Country": "Tonga",
-				"Cities": ["Nuku\u2018alofa"],
-				"Ages": {
+				"countryName": "Tonga",
+				"cities": ["Nuku\u2018alofa"],
+				"ageDistribution": {
 					"0-4": 0.121,
 					"80+": 1.0,
 					"30-34": 0.68899999999999995,

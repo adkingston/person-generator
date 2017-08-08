@@ -7,46 +7,55 @@ import org.junit.Test;
 
 public class RandomGeneratorTest {
 	
-	private int _seed;
-	private RandomSeed _rs;
-	private RandomSeed _r1;
-	private RandomSeed _r2;
-	private RandomSeed R;
+	private RandomSeed _seed1;
+	private RandomSeed _seed2;
+	private long RAND_RANGE_MIN = 1235165;
+	private long RAND_RANGE_MAX = 1435165;
 
 	
-//	@Before 
-//	public void beforeTest() {
-//		_seed = 0;
-//		_rs = new RandomSeed();
-//		_r1 = new RandomSeed(1);
-//		_r2 = new RandomSeed(1);
-//	}
-//	
-//	@Test
-//	public void initializationTest() {
-//		try {
-//			_rs.initialize(_seed);
-//		} catch ( Exception ex ) {
-//			fail(ex.getMessage());
-//		}
-//	}
-	
-	int S = 659810410; // test seed 
-	
-//	@Test
-//	public void seededResults() {
-//		// test to see if number lists are random, and if same seed results in same list of numbers
-//
-//		int iterations = 3;
-//		int n1;
-//		int n2;
-//		for (int i=0; i<iterations; i++) {
-//			n1 = _r1.getNum(1000);
-//			n2 = _r2.getNum(1000);
-//			System.out.println(n1);
-//			assertTrue(n1 == n2);
-//		}
-//	}
+	@Before 
+	public void beforeTest() {
+		_seed1 = new RandomSeed(5);
+		_seed2 = new RandomSeed(5);
+	}
 
 	
+	@Test
+	public void seededResultsRandInt() {
+		// test to see if number lists are random, and if same seed results in same list of numbers
+		int iterations = 3000;
+		int n1;
+		int n2;
+		for (int i=0; i<iterations; i++) {
+			n1 = _seed1.getNum(1000);
+			n2 = _seed2.getNum(1000);
+			assertTrue(n1 == n2);
+		}
+	}
+
+	@Test
+	public void seededResultsRandDoub() {
+		// test to see if number lists are random, and if same seed results in same list of numbers
+		int iterations = 3000;
+		double n1;
+		double n2;
+		for (int i=0; i<iterations; i++) {
+			n1 = _seed1.nextDouble();
+			n2 = _seed2.nextDouble();
+			assertTrue(n1 == n2);
+		}
+	}
+	
+	@Test
+	public void seededResultsRandRange() {
+		// test to see if number lists are random, and if same seed results in same list of numbers
+		int iterations = 3000;
+		long n1;
+		long n2;
+		for (int i=0; i<iterations; i++) {
+			n1 = _seed1.randRangeL(RAND_RANGE_MIN, RAND_RANGE_MAX);
+			n2 = _seed2.randRangeL(RAND_RANGE_MIN, RAND_RANGE_MAX);
+			assertTrue(n1 == n2);
+		}
+	}
 }

@@ -14,7 +14,7 @@ import com.securiport.simulator.persongenerator.model.World;
 
 public class NationGenerator {
 	
-	private static String AGE_DATA = "Resources/GlobalAgeDistribution.json";
+	private static String AGE_DATA = "Resources/GlobalAgeDistributions.json";
 	
 	public World parseJson(String fileName) throws FileNotFoundException {
 		// Method to parse the .json file. 

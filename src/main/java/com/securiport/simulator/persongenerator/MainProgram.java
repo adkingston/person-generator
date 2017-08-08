@@ -27,7 +27,7 @@ class MainProgram {
 		// Generates seed if none is given 
 		Long M = System.currentTimeMillis();
 		String F = Long.toString(M);
-		int S = Integer.parseInt(F.substring(F.length()-10));
+		int S = Integer.parseInt(F.substring(F.length()-8));
 		return S;
 	}
 	

@@ -84,7 +84,7 @@ public class PassportDataGenerator {
 
 		int age = A.determineAge(countryOfBirth.getAgeDistribution(), seed);
 		if (age == 0) {
-			age++;// no newborns!! 
+			age++; // no newborns!! 
 		}
 		
 		LocalDate DOB = A.generateDOB(age, seed);
@@ -100,7 +100,8 @@ public class PassportDataGenerator {
 		data.add(city);
 		data.add(countryOfBirth.getCountryName());
 		data.add(CO);
-		data.add(issueAndExpireyDates.toString());
+		data.add(issueAndExpireyDates.get(0).toString());
+		data.add(issueAndExpireyDates.get(1).toString());
 		data.add(generateNumber(seed));
 	
 		return data;	

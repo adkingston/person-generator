@@ -26,7 +26,7 @@ public class AgeNationalityGeneratorTest {
 	@Before
 	public void before() throws FileNotFoundException {
 		_ag = new AgeGenerator();
-		_ageData = "Resources/citiesandAgeData.json";
+		_ageData = "Resources/GlobalAgeDistributions.json";
 		_n = new NationGenerator();
 		_c = _n.getCountry(_r);
 	}
